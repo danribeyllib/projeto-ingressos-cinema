@@ -1,0 +1,70 @@
+  body {
+      background: #0f172a;
+      color: #f8fafc;
+  }
+
+.poster-filme {
+    max-height: 520px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.tag {
+    padding: 6px 16px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 0.75rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.descricao {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #bdc3c7;
+    padding: 15px;
+    border-bottom: 1px solid #7e31fb3c;
+    border-top: 1px solid #7e31fb3c;
+    width: 95%;
+}
+
+.horarios {
+    border: 1px solid #7f31fb;
+    padding: 10px;
+    background-color: #131c33;
+}
+
+.card-info-filme {
+    background: #131c33;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #0dcaf0;
+    border-right: 5px solid #0dcaf0;
+    border-radius: 15px;
+}
+
+.btn-sessao {
+    background: #6610f2;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn-sessao:hover {
+    color: white;
+    transform: translateY(-2px);
+    background-color: #7f31fb;
+}
+
+.titulo-filme {
+    color: #0dcaf0;
+}
+
+.titulo-sessao {
+    color: #0dcaf0;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}

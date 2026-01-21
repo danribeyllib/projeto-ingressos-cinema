@@ -1,0 +1,47 @@
+  body {
+      background: #0f172a;
+      color: #f8fafc;
+  }
+
+  h5 {
+    color: aqua !important;
+  }
+
+  .movie-card {
+      background: #020617;
+      border: none;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: .3s;
+  }
+
+  .movie-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+  }
+
+  .movie-card img {
+      height: 500px;
+      width: auto;
+      object-fit: cover;
+  }
+
+  .vermelho-tag {
+      background-color: #dc2626;
+      color: white;
+  }
+
+  .amarelo-tag {
+      background-color: #facc15;
+      color: #020617;
+  }
+
+  .verde-tag {
+      background-color: #16a34a;
+      color: white;
+  }
+
+  .azul-tag {
+      background-color: #2563eb;
+      color: white;
+  }

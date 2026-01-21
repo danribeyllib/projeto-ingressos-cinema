@@ -2,11 +2,13 @@
     {
         "id": 1,
         "Sala": "A",
+        "Total de Cadeiras": 36,
         "Assentos": [
             {
                 "Fileira A": [
                     {
                         "Cadeira": [
+                            "",
                             "1",
                             "2",
                             "3",
@@ -14,13 +16,15 @@
                             "5",
                             "6",
                             "7",
-                            "8"
+                            "8",
+                            ""
                         ]
                     }
                 ],
                 "Fileira B": [
                     {
                         "Cadeira": [
+                            "",
                             "1",
                             "2",
                             "3",
@@ -28,13 +32,15 @@
                             "5",
                             "6",
                             "7",
-                            "8"
+                            "8",
+                            ""
                         ]
                     }
                 ],
                 "Fileira C": [
                     {
                         "Cadeira": [
+                            "",
                             "1",
                             "2",
                             "3",
@@ -42,7 +48,8 @@
                             "5",
                             "6",
                             "7",
-                            "8"
+                            "8",
+                            ""
                         ]
                     }
                 ],
@@ -82,28 +89,90 @@
         ],
         "Filmes": [
             {
-                "Filme 1": {
-                    "Ingresso": 50.00,
-                    "Duração": "00h 00min",
-                    "Data:": ["20", "21", "22", "23", "24", "25"],
-                    "Horário": [
-                        "15",
-                        "17h30",
-                        "20h",
-                        "22h30"
+                "O Agente Secreto": {
+                    "id": 11,
+                    "Ingresso": 40.00,
+                    "Duração": "158 minutos",
+                    "Título Original": "O Agente Secreto",
+                    "Direção": "Kleber Mendonça Filho",
+                    "Sinópse": "Novo filme escrito e dirigido por Kleber Mendonça Filho, se passa no Brasil de 1977 onde Marcelo (Wagner Moura), um homem de 40 anos que trabalha como professor especializado em tecnologia, sai da movimentada São Paulo e vai para Recife. Ele tenta fugir do seu passado violento e misterioso, com a intenção de começar uma nova vida. Ali, ele chega na semana do Carnaval, então logo a paz e a calmaria da cidade vai se esvaindo, e com o decorrer do tempo percebe que atraiu para si o caos do qual ele sempre quis fugir. Para piorar a situação, além de Marcelo estar sendo espionado pelo seus vizinhos, vê que a cidade que achou que o acolheria ficou muito longe de ser o seu refúgio.",
+                    "Idiomas": {
+                        "Português (Original)": [
+                            "14h",
+                            "16h50",
+                            "19h30",
+                            "22h30"
+                        ]
+                    },
+                    "Poster": "../imagens/Poster/O_Agente_Secreto_(Cartaz_brasileiro) (1).jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "16 anos",
+                            "cor": "vermelho-tag"
+                        }
                     ],
-                    "Poster": "poster.jpg",
-                    "Classificação": "12 anos",
                     "Gênero": [
-                        "Ação",
-                        "Aventura"
+                        "Drama",
+                        "Suspense",
+                        "Thriller Político"
                     ]
                 },
-                "Filme 2": {
-                    "Ingresso": 50.00
+                "Zootopia 2": {
+                    "id": 12,
+                    "Ingresso": 50.00,
+                    "Duração": "108 minutos",
+                    "Título Original": "Zootopia 2",
+                    "Direção": "Jared Bush, Byron Howard",
+                    "Sinópse": "Os heróis e policiais novatos Judy Hopps e Nick Wilde estão de volta para mais uma aventura extravagante pela grande metrópole animal de Zootopia. Em Zootopia 2, após desvendarem o maior caso da história da cidade, Judy e Nick são surpreendidos por uma ordem do Chefe Bogo: os dois detetives precisarão frequentar o programa de aconselhamento Parceiros em Crise. A união da dupla é colocada à prova quando surge um mistério ligado a um recém-chegado à cidade: o misterioso e venenoso réptil Gary De’Snake. Para encontrar as soluções para o caso envolvendo a víbora, Judy e Nick devem desvendar novas partes da cidade, sendo testados o tempo todo.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "14h",
+                            "15h58",
+                            "17h56",
+                            "19h55"
+                        ]
+                    },
+                    "Poster": "../imagens/Poster/zootopia_2.jpeg",
+                    "Classificação": [
+                        {
+                            "Idade": "Livre",
+                            "cor": "verde-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Animação",
+                        "Aventura",
+                        "Comédia"
+                    ]
                 },
-                "Filme 3": {
-                    "Ingresso": 50.00
+                "A Empregada": {
+                    "id": 13,
+                    "Ingresso": 50.00,
+                    "Duração": "140 minutos",
+                    "Título Original": "Housemaid",
+                    "Direção": "Paul Feig",
+                    "Sinópse": "Millie (Sweeney) é uma jovem passando por dificuldades que se sente aliviada com a chance de um novo começo como empregada doméstica de Nina (Amanda Seyfried) e Andrew (Brandon Sklenar), um casal rico. Logo, ela descobre que os segredos da família são muito mais perigosos do que os seus",
+                    "Idiomas": {
+                        "Dublado": [
+                            "15h",
+                            "17h15",
+                            "19h30"
+                        ],
+                        "Legendado": [
+                            "21h45"
+                        ]
+                    },
+                    "Poster": "https://cinema10.com.br/upload/noticias/noticias-poster-livro-a-empregada-4x5.jpg.webp",
+                    "Classificação": [
+                        {
+                            "Idade": "16 anos",
+                            "cor": "vermelho-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Drama",
+                        "Suspense"
+                    ]
                 }
             }
         ]
