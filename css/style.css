@@ -1,47 +1,172 @@
-  body {
-      background: #0f172a;
-      color: #f8fafc;
-  }
+body {
+    background-color: rgba(22, 0, 43, 0.712);
+    background-image: url("../imagens/Fundo/photo-1689443111130-6e9c7dfd8f9e.jpg");
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    min-height: 100vh;
+}
 
-  h5 {
-    color: aqua !important;
-  }
+.fundo {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-height: 100vh;
+}
 
-  .movie-card {
-      background: #020617;
-      border: none;
-      border-radius: 5px;
-      overflow: hidden;
-      transition: .3s;
-  }
+/* Título */
+h5 {
+    color: #14fff3 !important;
+}
 
-  .movie-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
-  }
+h6 {
+    font-weight: 600 !important;
+}
 
-  .movie-card img {
-      height: 500px;
-      width: auto;
-      object-fit: cover;
-  }
+/* Navbar */
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(21, 0, 55, 0.625) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(7, 197, 255, 0.1);
+}
 
-  .vermelho-tag {
-      background-color: #dc2626;
-      color: white;
-  }
+.nav-link:hover {
+    color: #07c5ff !important;
+}
 
-  .amarelo-tag {
-      background-color: #facc15;
-      color: #020617;
-  }
+#cart-count {
+    font-size: 0.65rem;
+}
 
-  .verde-tag {
-      background-color: #16a34a;
-      color: white;
-  }
+/* Card Filmes */
+.filme-card {
+    /* From https://css.glass */
+    background: rgba(29, 17, 47, 0.673);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border: 1px solid rgba(29, 17, 47, 0.59);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .3s;
+}
 
-  .azul-tag {
-      background-color: #2563eb;
-      color: white;
-  }
+.filme-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+}
+
+.filme-card img {
+    height: 500px;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Tags Classificação Indicativa */
+.vermelho-tag {
+    background-color: #ea0505;
+    color: white;
+}
+
+.laranja-tag {
+    background-color: #e0730d;
+    color: white;
+}
+
+.amarelo-tag {
+    background-color: #f0c000;
+    color: #ffffff;
+}
+
+.verde-tag {
+    background-color: #16a34a;
+    color: white;
+}
+
+.azul-tag {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Footer */
+.footer-neon {
+    background-color: rgba(21, 0, 55, 0.625) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(7, 197, 255, 0.1);
+    color: white;
+}
+
+/* Ícones Redes Sociais */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+    background: #07c5ff;
+    color: #000;
+    box-shadow: 0 0 15px #07c5ff;
+    transform: translateY(-2px);
+}
+
+/* Modais */
+/* Conteúdo */
+.modal-content {
+    background: rgba(21, 0, 55, 0.85) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(7, 197, 255, 0.5);
+    box-shadow: 0 0 30px rgba(7, 197, 255, 0.2);
+    color: white;
+    border-radius: 15px;
+}
+
+/* Cabeçalho */
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+    color: #07c5ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(7, 197, 255, 0.5);
+}
+
+.modal-header-erro .modal-title {
+    color: #f69fb5;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(233, 0, 78, 0.97);
+}
+
+
+/* Botão Fechar */
+.btn-close {
+    filter: invert(1);
+}
+
+/* Rodapé e Botões */
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary {
+    background: transparent !important;
+    border: 1px solid #07c5ff !important;
+    color: #07c5ff !important;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #07c5ff !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px #07c5ff;
+}

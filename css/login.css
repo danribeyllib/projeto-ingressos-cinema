@@ -1,0 +1,85 @@
+
+.fundo {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+}
+
+h3 {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 8px;
+}
+
+.form-container {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  background: #2d1b49;
+  justify-self: center;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 0 10px rgba(67, 210, 253, 0.404);
+}
+
+.form-email:valid,
+.form-senha:valid {
+  background-color: rgb(221, 255, 221);
+  border-color: rgb(0, 128, 0);
+  border-width: 2px;
+}
+
+.form-email:focus:invalid,
+.form-senha:focus:invalid {
+  background-color: rgb(255, 233, 233);
+  border-color: rgb(128, 0, 0);
+  border-width: 2px;
+}
+ 
+#iconeSenha {
+  color: rgb(255, 255, 255);
+}
+
+#mostrarSenha:focus {
+  border-color: rgb(44, 182, 195);
+  box-shadow: 0 0 0 0.25rem rgba(44, 102, 195, 0.4);
+}
+
+#mostrarSenha:checked {
+  background-color: rgb(25, 41, 135);
+}
+
+label small {
+  font-size: 0.65rem;
+}
+
+.button-div {
+  border: 1px solid blue;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 2px rgba(201, 201, 201, 0.589);
+}
+
+/* Celular e tablet */
+@media (max-width: 480px) {
+
+  body {
+    padding: 8px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .form-container {
+    padding: 10px;
+    background-color: rgba(191, 222, 175, 0.30);
+  }
+
+  .form-floating input {
+    font-size: 0.9rem;
+  }
+}

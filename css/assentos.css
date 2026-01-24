@@ -1,0 +1,142 @@
+/* Container */
+.container {
+    width: 100vh;
+}
+
+#mapa-sala {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(4, 5, 5, 0.622);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.268);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(53, 0, 152, 0.551);
+}
+
+/* Tela */
+.tela {
+    width: 70%;
+    height: 5px !important;
+    background: #07c5ff;
+    margin: 15px auto 40px auto;
+    border-radius: 50% / 100% 100% 0 0;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+/* Linha da Fileira  */
+.fileira-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+/* Letra da Fileira */
+.label-fileira {
+    width: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/* Assentos e Espaços Vazios */
+.assento-cinema,
+.assento-vazio {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 11px;
+    transition: all 0.2s ease;
+}
+
+/* Assento Disponível */
+.assento-cinema {
+    background-color: #240231;
+    border: 1px solid #2df2fc;
+    color: white;
+    cursor: pointer;
+}
+
+.assento-cinema:hover:not(.ocupado) {
+    background-color: #4b0148;
+    transform: translateY(-2px);
+}
+
+/* Assento Selecionado */
+.assento-cinema.selecionado {
+    background-color: #07c9ff !important;
+    color: #000 !important;
+    font-weight: bolder !important;
+}
+
+/* Assento Ocupado - simulação */
+.assento-cinema.ocupado {
+    background-color: #1c003f !important;
+    color: #07c9ffd5;
+    font-weight: bolder;
+    cursor: not-allowed;
+    opacity: 0.7;
+    border: none;
+}
+
+/* Espaço do Corredor */
+.assento-vazio {
+    background-color: transparent;
+    cursor: default;
+}
+
+/* Legenda */
+.assento-legenda {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: #240231;
+    border: 1px solid #2df2fc;
+}
+
+/* Selecionado */
+.assento-legenda.selecionado {
+    background-color: #07c9ff !important;
+}
+
+/* Ocupado*/
+.assento-legenda.ocupado {
+    background-color: #2b005f !important;
+    opacity: 0.5;
+    border: none;
+}
+
+
+/* Resumo da Compra */
+.secao-resumo {
+    background: rgba(30, 0, 87, 0.61);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(53, 0, 152, 0.551);
+    color: white;
+    padding: 30px;
+    min-width: 100vh;
+}
+
+.linha-resumo,
+.valor-resumo, .rotulo-resumo {
+    font-size: 1.1rem;
+}

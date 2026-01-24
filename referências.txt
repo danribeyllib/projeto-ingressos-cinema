@@ -1,3 +1,17 @@
 GNC: https://www.gnccinemas.com.br/index.php/home?utm_source=google_ads&utm_medium=pmax_aon_app&utm_campaign=aon_app&utm_id=aon_app&gad_source=1&gad_campaignid=21983682419&gbraid=0AAAAAC42TYfbEpfvwfUJXGTyZYJaThS2F&gclid=CjwKCAiAj8LLBhAkEiwAJjbY75gj5OynT7ThkGMg8-GQaqYQz3qgkdx43oefeyPNf4hS0pKjmwaw_BoCkt0QAvD_BwE
 Cinépolis: https://www.cinepolis.com.br/
            https://www.cinepolis.com.br/filmes/1000009761-o-agente-secreto/
+
+
+
+/* 4 valores: Topo | Direita | Baixo | Esquerda */
+padding: 10px 20px 15px 5px;
+
+/* 3 valores: Topo | Esquerda/Direita | Baixo */
+padding: 10px 20px 15px;
+
+/* 2 valores: Topo/Baixo | Esquerda/Direita */
+padding: 10px 20px;
+
+/* 1 valor: Todos os lados iguais */
+padding: 10px;

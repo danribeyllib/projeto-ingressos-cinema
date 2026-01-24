@@ -2,7 +2,7 @@
     {
         "id": 1,
         "Sala": "A",
-        "Total de Cadeiras": 36,
+        "Total de Cadeiras": 44,
         "Assentos": [
             {
                 "Fileira A": [
@@ -89,50 +89,20 @@
         ],
         "Filmes": [
             {
-                "O Agente Secreto": {
-                    "id": 11,
-                    "Ingresso": 40.00,
-                    "Duração": "158 minutos",
-                    "Título Original": "O Agente Secreto",
-                    "Direção": "Kleber Mendonça Filho",
-                    "Sinópse": "Novo filme escrito e dirigido por Kleber Mendonça Filho, se passa no Brasil de 1977 onde Marcelo (Wagner Moura), um homem de 40 anos que trabalha como professor especializado em tecnologia, sai da movimentada São Paulo e vai para Recife. Ele tenta fugir do seu passado violento e misterioso, com a intenção de começar uma nova vida. Ali, ele chega na semana do Carnaval, então logo a paz e a calmaria da cidade vai se esvaindo, e com o decorrer do tempo percebe que atraiu para si o caos do qual ele sempre quis fugir. Para piorar a situação, além de Marcelo estar sendo espionado pelo seus vizinhos, vê que a cidade que achou que o acolheria ficou muito longe de ser o seu refúgio.",
-                    "Idiomas": {
-                        "Português (Original)": [
-                            "14h",
-                            "16h50",
-                            "19h30",
-                            "22h30"
-                        ]
-                    },
-                    "Poster": "../imagens/Poster/O_Agente_Secreto_(Cartaz_brasileiro) (1).jpg",
-                    "Classificação": [
-                        {
-                            "Idade": "16 anos",
-                            "cor": "vermelho-tag"
-                        }
-                    ],
-                    "Gênero": [
-                        "Drama",
-                        "Suspense",
-                        "Thriller Político"
-                    ]
-                },
                 "Zootopia 2": {
                     "id": 12,
-                    "Ingresso": 50.00,
+                    "Ingresso": 40.00,
                     "Duração": "108 minutos",
                     "Título Original": "Zootopia 2",
                     "Direção": "Jared Bush, Byron Howard",
-                    "Sinópse": "Os heróis e policiais novatos Judy Hopps e Nick Wilde estão de volta para mais uma aventura extravagante pela grande metrópole animal de Zootopia. Em Zootopia 2, após desvendarem o maior caso da história da cidade, Judy e Nick são surpreendidos por uma ordem do Chefe Bogo: os dois detetives precisarão frequentar o programa de aconselhamento Parceiros em Crise. A união da dupla é colocada à prova quando surge um mistério ligado a um recém-chegado à cidade: o misterioso e venenoso réptil Gary De’Snake. Para encontrar as soluções para o caso envolvendo a víbora, Judy e Nick devem desvendar novas partes da cidade, sendo testados o tempo todo.",
+                    "Sinópse": "Os detetives Judy Hopps e Nick Wilde encontram-se no rastro de um misterioso réptil que chega à cidade e vira o departamento de polícia de cabeça para baixo. Para resolver o caso, eles devem ir disfarçados para novas partes da cidade e enfrentar o passado de Nick.",
                     "Idiomas": {
                         "Dublado": [
-                            "14h",
-                            "15h58",
-                            "17h56",
-                            "19h55"
+                            "12:00",
+                            "17:00"
                         ]
                     },
-                    "Poster": "../imagens/Poster/zootopia_2.jpeg",
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/9/68f14d020cf13.jpg",
                     "Classificação": [
                         {
                             "Idade": "Livre",
@@ -141,25 +111,47 @@
                     ],
                     "Gênero": [
                         "Animação",
+                        "Aventura"
+                    ]
+                },
+                "O Senhor Dos Anéis - O Retorno Do Rei (25º Aniversário)": {
+                    "id": 14,
+                    "Ingresso": 60.00,
+                    "Duração": "201 minutos",
+                    "Título Original": "The Lord of the Rings: The Return of the King",
+                    "Direção": "Peter Jackson",
+                    "Sinópse": "O confronto final entre as forças do bem e do mal pelo controle da Terra Média chega ao seu ápice. Enquanto Aragorn lidera o exército de Gondor contra as hordas de Sauron para distrair o Olho, Frodo e Sam atravessam Mordor em uma tentativa desesperada de destruir o Um Anel no Monte da Perdição.",
+                    "Idiomas": {
+                        "Legendado": [
+                            "14:00",
+                            "20:30"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/7/694e7f7e0328d.webp",
+                    "Classificação": [
+                        {
+                            "Idade": "12 anos",
+                            "cor": "amarelo-tag"
+                        }
+                    ],
+                    "Gênero": [
                         "Aventura",
-                        "Comédia"
+                        "Fantasia"
                     ]
                 },
                 "A Empregada": {
                     "id": 13,
-                    "Ingresso": 50.00,
+                    "Ingresso": 45.00,
                     "Duração": "140 minutos",
                     "Título Original": "Housemaid",
                     "Direção": "Paul Feig",
-                    "Sinópse": "Millie (Sweeney) é uma jovem passando por dificuldades que se sente aliviada com a chance de um novo começo como empregada doméstica de Nina (Amanda Seyfried) e Andrew (Brandon Sklenar), um casal rico. Logo, ela descobre que os segredos da família são muito mais perigosos do que os seus",
+                    "Sinópse": "Millie é uma jovem que luta para recomeçar sua vida e aceita trabalhar como empregada doméstica para a rica e instável família Winchester. No entanto, ela logo percebe que as aparências enganam e os segredos sombrios escondidos entre as paredes da mansão são muito mais perigosos do que seu próprio passado.",
                     "Idiomas": {
                         "Dublado": [
-                            "15h",
-                            "17h15",
-                            "19h30"
+                            "19:15"
                         ],
                         "Legendado": [
-                            "21h45"
+                            "22:30"
                         ]
                     },
                     "Poster": "https://cinema10.com.br/upload/noticias/noticias-poster-livro-a-empregada-4x5.jpg.webp",
@@ -172,6 +164,549 @@
                     "Gênero": [
                         "Drama",
                         "Suspense"
+                    ]
+                },
+                "O Agente Secreto": {
+                    "id": 11,
+                    "Ingresso": 55.00,
+                    "Duração": "158 minutos",
+                    "Título Original": "O Agente Secreto",
+                    "Direção": "Kleber Mendonça Filho",
+                    "Sinópse": "No Recife de 1977, durante a ditadura militar, Marcelo é um homem que tenta manter a discrição enquanto foge de perigosos fantasmas do seu passado político. Em meio à efervescência do Carnaval, ele percebe que está sendo vigiado e precisa decidir até onde irá para sobreviver e proteger aqueles que ama.",
+                    "Idiomas": {
+                        "Português (Original)": [
+                            "16:15",
+                            "22:00"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/7/68e9569dc5580.webp",
+                    "Classificação": [
+                        {
+                            "Idade": "16 anos",
+                            "cor": "vermelho-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Drama",
+                        "Suspense"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "Sala": "B",
+        "Total de Cadeiras": 44,
+        "Assentos": [
+            {
+                "Fileira A": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira B": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira C": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira D": [
+                    {
+                        "Cadeira": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10"
+                        ]
+                    }
+                ],
+                "Fileira E": [
+                    {
+                        "Cadeira": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Filmes": [
+            {
+                "A Empregada": {
+                    "id": 23,
+                    "Ingresso": 45.00,
+                    "Duração": "140 minutos",
+                    "Título Original": "Housemaid",
+                    "Direção": "Paul Feig",
+                    "Sinópse": "Adaptação do best-seller psicológico, o filme acompanha Millie, uma mulher que aceita um emprego na casa dos Winchester. Ela logo descobre que a patroa é instável e o marido esconde algo, mas o que ninguém sabe é que Millie tem seus próprios métodos de defesa quando se sente acuada.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "12:15",
+                            "17:30"
+                        ],
+                        "Legendado": [
+                            "22:30"
+                        ]
+                    },
+                    "Poster": "https://cinema10.com.br/upload/noticias/noticias-poster-livro-a-empregada-4x5.jpg.webp",
+                    "Classificação": [
+                        {
+                            "Idade": "16 anos",
+                            "cor": "vermelho-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Drama",
+                        "Suspense"
+                    ]
+                },
+                "O Agente Secreto": {
+                    "id": 21,
+                    "Ingresso": 55.00,
+                    "Duração": "158 minutos",
+                    "Título Original": "O Agente Secreto",
+                    "Direção": "Kleber Mendonça Filho",
+                    "Sinópse": "Wagner Moura estrela como Marcelo, um professor universitário que se muda para Recife nos anos 70 buscando refúgio. Entre festas de rua e a vigilância constante dos órgãos de repressão, ele tenta desvendar quem o está perseguindo em um clima de paranoia e tensão constante.",
+                    "Idiomas": {
+                        "Português (Original)": [
+                            "14:45",
+                            "20:00"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/7/68e9569dc5580.webp",
+                    "Classificação": [
+                        {
+                            "Idade": "16 anos",
+                            "cor": "vermelho-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Drama",
+                        "Suspense"
+                    ]
+                },
+                "Zootopia 2": {
+                    "id": 22,
+                    "Ingresso": 40.00,
+                    "Duração": "108 minutos",
+                    "Título Original": "Zootopia 2",
+                    "Direção": "Jared Bush, Byron Howard",
+                    "Sinópse": "Judy e Nick estão de volta na sequência do sucesso da Disney. Desta vez, a dupla de policiais precisa lidar com uma nova ameaça reptiliana que desafia as leis da natureza na metrópole animal, forçando-os a trabalhar com novos aliados improváveis em uma aventura cheia de humor e ação.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "14:30",
+                            "19:30"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/9/68f14d020cf13.jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "Livre",
+                            "cor": "verde-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Animação",
+                        "Aventura"
+                    ]
+                },
+                "O Senhor Dos Anéis - O Retorno Do Rei (25º Aniversário)": {
+                    "id": 24,
+                    "Ingresso": 60.00,
+                    "Duração": "201 minutos",
+                    "Título Original": "The Lord of the Rings: The Return of the King",
+                    "Direção": "Peter Jackson",
+                    "Sinópse": "A épica conclusão da trilogia de J.R.R. Tolkien. Enquanto as sombras de Sauron se alongam sobre a Terra Média, o herdeiro de Isildur precisa assumir o trono de Gondor. Uma jornada emocionante sobre amizade, sacrifício e a luta desesperada pela liberdade contra a escuridão absoluta.",
+                    "Idiomas": {
+                        "Legendado": [
+                            "16:30",
+                            "21:00"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/7/694e7f7e0328d.webp",
+                    "Classificação": [
+                        {
+                            "Idade": "12 anos",
+                            "cor": "amarelo-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Aventura",
+                        "Fantasia"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "Sala": "C",
+        "Total de Cadeiras": 44,
+        "Assentos": [
+            {
+                "Fileira A": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira B": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira C": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira D": [
+                    {
+                        "Cadeira": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10"
+                        ]
+                    }
+                ],
+                "Fileira E": [
+                    {
+                        "Cadeira": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Filmes": [
+            {
+                "Bob Esponja: Em Busca Da Calça Quadrada": {
+                    "id": 33,
+                    "Ingresso": 30.00,
+                    "Duração": "88 minutos",
+                    "Título Original": "The SpongeBob Movie: Search for SquarePants",
+                    "Direção": "Derek Drymon",
+                    "Sinópse": "Quando suas icônicas calças quadradas desaparecem misteriosamente, Bob Esponja convence seu melhor amigo Patrick a acompanhá-lo em uma jornada épica até as profundezas mais sombrias do oceano. Lá, eles descobrem que o Holandês Voador planeja algo muito maior do que apenas roubar vestimentas.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "12:00",
+                            "15:30",
+                            "19:15"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/9/6916359fb2ed0.jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "Livre",
+                            "cor": "verde-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Animação",
+                        "Aventura"
+                    ]
+                },
+                "Justiça Artificial": {
+                    "id": 32,
+                    "Ingresso": 40.00,
+                    "Duração": "98 minutos",
+                    "Título Original": "Justicia Artificial",
+                    "Direção": "Simon Casal",
+                    "Sinópse": "Em um futuro próximo, o governo planeja substituir juízes humanos por um software de Inteligência Artificial. Carmen Costa, uma juíza renomada, é convidada a avaliar o sistema, mas acaba descobrindo uma rede de corrupção e conspiração que ameaça a própria base da liberdade e da justiça no país.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "13:45",
+                            "17:15"
+                        ],
+                        "Legendado": [
+                            "22:30"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/9/695feba963e5e.jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "14 anos",
+                            "cor": "laranja-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Ficção Científica",
+                        "Suspense"
+                    ]
+                },
+                "Song Sung Blue: Um Sonho A Dois": {
+                    "id": 34,
+                    "Ingresso": 40.00,
+                    "Duração": "110 minutos",
+                    "Título Original": "Song Sung Blue",
+                    "Direção": "Craig Gillespie",
+                    "Sinópse": "Baseado em uma história real, o filme narra a trajetória de um casal de músicos amadores que decide formar uma banda cover de Neil Diamond. Enquanto lutam para alcançar o sucesso nos palcos locais de Milwaukee, eles descobrem que a música é a única força capaz de manter seu relacionamento unido diante das dificuldades.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "21:00"
+                        ]
+                    },
+                    "Poster": "https://gnccinemas.com.br/_files/pasta/9/6960ee5cb2f9a.jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "14 anos",
+                            "cor": "laranja-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Drama",
+                        "Romance",
+                        "Musical"
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "Sala": "D",
+        "Total de Cadeiras": 44,
+        "Assentos": [
+            {
+                "Fileira A": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira B": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira C": [
+                    {
+                        "Cadeira": [
+                            "",
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            ""
+                        ]
+                    }
+                ],
+                "Fileira D": [
+                    {
+                        "Cadeira": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10"
+                        ]
+                    }
+                ],
+                "Fileira E": [
+                    {
+                        "Cadeira": [
+                            "1",
+                            "2",
+                            "3",
+                            "4",
+                            "5",
+                            "6",
+                            "7",
+                            "8",
+                            "9",
+                            "10"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Filmes": [
+            {
+                "Terror Em Silent Hill: Regresso Para O Inferno": {
+                    "id": 41,
+                    "Ingresso": 50.00,
+                    "Duração": "100 minutos",
+                    "Título Original": "Return to Silent Hill",
+                    "Direção": "Christophe Gans",
+                    "Sinópse": "James Sunderland recebe uma carta misteriosa de sua falecida esposa que o atrai de volta para a sinistra cidade de Silent Hill. Ao chegar, ele encontra um pesadelo vivo povoado por criaturas aterrorizantes e figuras familiares, forçando-o a confrontar sua própria sanidade para descobrir a verdade.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "14:30",
+                            "18:45"
+                        ],
+                        "Legendado": [
+                            "22:30"
+                        ]
+                    },
+                    "Poster": "https://www.gnccinemas.com.br/_files/pasta/9/6960ee9caef06.jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "16 anos",
+                            "cor": "vermelho-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Terror",
+                        "Suspense"
+                    ]
+                },
+                "Song Sung Blue: Um Sonho A Dois": {
+                    "id": 44,
+                    "Ingresso": 40.00,
+                    "Duração": "110 minutos",
+                    "Título Original": "Song Sung Blue",
+                    "Direção": "Craig Gillespie",
+                    "Sinópse": "Hugh Jackman e Kate Hudson estrelam este drama musical sobre a persistência dos sonhos. Acompanhe a jornada de dois artistas de bares que encontram um no outro a inspiração necessária para criar um tributo musical que ressoa com toda uma comunidade, provando que nunca é tarde para brilhar.",
+                    "Idiomas": {
+                        "Dublado": [
+                            "12:15",
+                            "16:30"
+                        ],
+                        "Legendado": [
+                            "20:45"
+                        ]
+                    },
+                    "Poster": "https://gnccinemas.com.br/_files/pasta/9/6960ee5cb2f9a.jpg",
+                    "Classificação": [
+                        {
+                            "Idade": "14 anos",
+                            "cor": "laranja-tag"
+                        }
+                    ],
+                    "Gênero": [
+                        "Drama",
+                        "Romance",
+                        "Musical"
                     ]
                 }
             }

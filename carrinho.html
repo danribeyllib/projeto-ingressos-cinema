@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <!--CSS-->
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/carrinho.css" rel="stylesheet" />
+    <link href="./css/modais.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="#" sizes="32x32" />
+    <title>Carrinho - Cinema</title>
+</head>
+
+<body>
+    <!--NAV-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="index.html">
+                <i class="bi bi-film me-2"></i>Cine
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Filmes</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <span id="boas-vindas-usuario" class="text-white small fw-light"></span>
+
+                    <a href="./carrinho.html" class="text-white position-relative">
+                        <i class="bi bi-cart3 fs-4 text-info"></i>
+                        <span id="cart-count"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                    <button type="button" class="btn btn-outline-danger btn-sm ms-2" data-bs-toggle="modal"
+                        data-bs-target="#modalSair">
+                        Sair
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--MAIN-->
+    <main>
+        <section class="fundo">
+            <div class="secao-resumo card shadow-sm border-0 mt-4 p-3 mx-auto" style="max-width: 380px;">
+
+                <h6 class="text-center fw-bold mb-3 fs-4 text-warning">Resumo da compra</h6>
+
+                <div class="linha-resumo row mb-1 align-items-center">
+                    <div class="rotulo-resumo col-5 small text-white">Filme</div>
+                    <div class="valor-resumo col-7 text-end small fw-semibold"><!--Título Filme--></div>
+                </div>
+
+                <div class="linha-resumo row mb-1 align-items-center">
+                    <div class="rotulo-resumo col-5 small text-white">Sala</div>
+                    <div class="valor-resumo col-7 text-end small fw-semibold"><!--Sala--></div>
+                </div>
+
+                <div class="linha-resumo row mb-1 align-items-center">
+                    <div class="rotulo-resumo col-5 small text-white">Data e horário</div>
+                    <div class="valor-resumo col-7 text-end small fw-semibold"><!--Dia + Hora--></div>
+                </div>
+
+                <div class="entrada-ingresso row mb-1 align-items-center">
+                    <div class="rotulo-resumo col-5 small text-white">Entrada</div>
+                    <div class="valor-resumo col-7 text-end small fw-semibold"><!--Inteira ou meia--></div>
+                </div>
+
+                <div class="linha-resumo row mb-1 align-items-center">
+                    <div class="rotulo-resumo col-5 small text-white">Assentos</div>
+                    <div class="valor-resumo col-7 text-end small fw-semibold"><!--Assentos--></div>
+                </div>
+
+                <div class="linha-resumo total-resumo row pt-2 mt-4 border-top">
+                    <div class="rotulo-resumo col-5 fw-bold small">Total</div>
+                    <div class="valor-resumo mt-4 col-7 text-end fw-bold text-warning fs-6">
+                        R$ 0,00 <!--Total-->
+                    </div>
+                </div>
+                <div class="text-center mb-2 mt-5">
+                    <button id="btn-confirmar" class="btn btn-info px-5 py-2 fw-bold" disabled>
+                        Concluir Compra
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer-neon mt-auto py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a class="navbar-brand fw-bold text-info fs-4" href="#">
+                        <i class="bi bi-film me-2"></i>Cine
+                    </a>
+                    <p class="text-white-50 small mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <h6 class="text-info text-uppercase mb-3 fw-bold small">Nossas Redes Sociais</h6>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <h6 class="text-info text-uppercase mb-3 fw-bold small">Contato</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><i class="bi bi-envelope-at me-2 text-info"></i>contato@cine.com</li>
+                        <li><i class="bi bi-whatsapp me-2 text-info"></i>(54) 99999-9999</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="my-4 border-secondary opacity-25">
+
+            <div class="text-center text-white-50 small">
+                &copy;
+                <script>document.write(new Date().getFullYear())</script> Cine. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="modal fade modalConfirmacao" id="modalSair" tabindex="-1" aria-hidden="true" style="z-index: 9999;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Encerrar Sessão</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza que deseja sair?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retornar</button>
+                    <button type="button" class="btn btn-danger" onclick="sair()">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Script-->
+    <script src="./js/carrinho.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

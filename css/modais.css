@@ -1,0 +1,58 @@
+/* Conteúdo */
+.modal-content {
+    background: rgba(21, 0, 55, 0.85) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(7, 197, 255, 0.5);
+    box-shadow: 0 0 30px rgba(7, 197, 255, 0.2);
+    color: white;
+    border-radius: 15px;
+}
+
+/* Cabeçalho */
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-title {
+    color: #07c5ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(7, 197, 255, 0.5);
+}
+
+.modal-header-erro .modal-title {
+    color: #f69fb5;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(233, 0, 78, 0.97);
+}
+
+
+/* Botão X */
+.btn-close {
+    filter: invert(1);
+}
+
+/* Rodapé e Botões */
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-secondary {
+    background: transparent !important;
+    border: 1px solid #07c5ff !important;
+    color: #07c5ff !important;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #07c5ff !important;
+    color: #000 !important;
+    box-shadow: 0 0 15px #07c5ff;
+}
+
+.modal {
+    z-index: 1055;
+}
+
+.modal-backdrop {
+    z-index: 1050;
+}

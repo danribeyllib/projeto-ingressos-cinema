@@ -1,0 +1,17 @@
+/* Resumo da Compra */
+.secao-resumo {
+    background: rgba(30, 0, 87, 0.61);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(53, 0, 152, 0.551);
+    color: white;
+    padding: 30px;
+    min-width: 100vh;
+}
+
+.linha-resumo,
+.valor-resumo, .rotulo-resumo {
+    font-size: 1.1rem;
+}
