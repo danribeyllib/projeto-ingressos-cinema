@@ -1,6 +1,14 @@
 /* Container */
-.container {
-    width: 100vh;
+body {
+    position: relative;
+}
+
+.container-sala {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #mapa-sala {
@@ -8,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    padding: 20px;
+    padding: 20px 60px 20px 60px;
     border-radius: 10px;
     background: rgba(4, 5, 5, 0.622);
     border-radius: 10px;
@@ -20,7 +28,7 @@
 
 /* Tela */
 .tela {
-    width: 70%;
+    width: 30%;
     height: 5px !important;
     background: #07c5ff;
     margin: 15px auto 40px auto;
@@ -122,7 +130,6 @@
     border: none;
 }
 
-
 /* Resumo da Compra */
 .secao-resumo {
     background: rgba(30, 0, 87, 0.61);
@@ -132,11 +139,125 @@
     -webkit-backdrop-filter: blur(8.2px);
     border: 1px solid rgba(53, 0, 152, 0.551);
     color: white;
-    padding: 30px;
-    min-width: 100vh;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .linha-resumo,
-.valor-resumo, .rotulo-resumo {
+.valor-resumo,
+.rotulo-resumo {
     font-size: 1.1rem;
+}
+
+
+/* Seletores */
+.valor-resumo input[type=number] {
+    appearance: auto;
+    -moz-appearance: number-input;
+    -webkit-appearance: number-input;
+
+    background-color: #33013f;
+    border: 1px solid #3cd2fb;
+    color: #3cd2fb;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    width: 65px !important;
+    padding: 2px;
+    display: inline-block;
+}
+
+
+/* Container seletores */
+.valor-resumo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Números */
+.input-qtd {
+    background-color: #23003ad5;
+    border: 1px solid #3cd2fb;
+    color: #3cd2fb;
+    font-weight: bold;
+    text-align: center;
+    width: 45px !important;
+    font-size: 1.1rem;
+    pointer-events: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centralizar */
+.input-qtd::-webkit-outer-spin-button,
+.input-qtd::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Botões + e - */
+.btn-controle {
+    background-color: #23003ad5;
+    border: 1px solid #3cd2fb;
+    color: #3cd2fb;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-controle:hover {
+    background-color: #3cd2fb;
+    color: #000;
+}
+
+
+/* Desabilitado */
+.input-qtd:disabled,
+.btn-controle:disabled {
+    opacity: 0.3;
+    border-color: #444;
+    color: #757575;
+    cursor: not-allowed;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .tela {
+        width: 90vw;
+    }
+
+    .assento-cinema,
+    .assento-vazio {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .fileira-container {
+        gap: 4px;
+    }
+
+    .label-fileira {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    .rotulo-resumo {
+        font-size: 0.9rem;
+    }
+
+    .btn-controle {
+        width: 25px;
+        height: 25px;
+    }
 }

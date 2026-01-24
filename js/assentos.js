@@ -89,7 +89,7 @@ function gerarMapa(layout) {
                 } else {
                     assento.onclick = () => selecionarAssento(assento, idAssento);
                 }
-            };
+            }
 
             fileiraDiv.appendChild(assento);
         });
@@ -98,6 +98,7 @@ function gerarMapa(layout) {
     });
 }
 
+// Seleção dos Assentos
 // Seleção dos Assentos
 function selecionarAssento(elemento, id) {
     if (assentosSelecionados.includes(id)) {
@@ -108,21 +109,122 @@ function selecionarAssento(elemento, id) {
         elemento.classList.add("selecionado");
     }
 
+    // Ao selecionar/deselecionar, resetamos os seletores para o padrão (tudo inteira)
+    document.getElementById("qtd-inteira").value = assentosSelecionados.length;
+    document.getElementById("qtd-meia").value = 0;
+
     atualizarResumo();
 }
 
-// Resumo da compra
+// Ouvintes de evento para os seletores de tipo de ingresso
+document.getElementById("qtd-inteira").addEventListener("input", function() {
+    ajustarQuantidades("inteira");
+});
+
+document.getElementById("qtd-meia").addEventListener("input", function() {
+    ajustarQuantidades("meia");
+});
+
+function ajustarQuantidades(tipoAlterado) {
+    const totalAssentos = assentosSelecionados.length;
+    let qtdInteira = parseInt(document.getElementById("qtd-inteira").value) || 0;
+    let qtdMeia = parseInt(document.getElementById("qtd-meia").value) || 0;
+
+    if (tipoAlterado === "inteira") {
+        if (qtdInteira > totalAssentos) qtdInteira = totalAssentos;
+        qtdMeia = totalAssentos - qtdInteira;
+    } else {
+        if (qtdMeia > totalAssentos) qtdMeia = totalAssentos;
+        qtdInteira = totalAssentos - qtdMeia;
+    }
+
+    document.getElementById("qtd-inteira").value = qtdInteira;
+    document.getElementById("qtd-meia").value = qtdMeia;
+    
+    atualizarResumo();
+}
+
+// Resumo da compra 
+// Seleção dos Assentos
+function selecionarAssento(elemento, id) {
+    if (assentosSelecionados.includes(id)) {
+        assentosSelecionados = assentosSelecionados.filter(a => a !== id);
+        elemento.classList.remove("selecionado");
+    } else {
+        assentosSelecionados.push(id);
+        elemento.classList.add("selecionado");
+    }
+
+    document.getElementById("qtd-inteira").value = assentosSelecionados.length;
+    document.getElementById("qtd-meia").value = 0;
+
+    atualizarResumo();
+}
+
+document.getElementById("qtd-inteira").addEventListener("input", function() {
+    ajustarQuantidades("inteira");
+});
+
+document.getElementById("qtd-meia").addEventListener("input", function() {
+    ajustarQuantidades("meia");
+});
+
+function ajustarQuantidades(tipoAlterado) {
+    const totalAssentos = assentosSelecionados.length;
+ 
+    let qtdInteira = parseInt(document.getElementById("qtd-inteira").value) || 0;
+    let qtdMeia = parseInt(document.getElementById("qtd-meia").value) || 0;
+
+    if (tipoAlterado === "inteira") {
+       
+        if (qtdInteira > totalAssentos) qtdInteira = totalAssentos;
+        qtdMeia = totalAssentos - qtdInteira;
+    } else {
+       
+        if (qtdMeia > totalAssentos) qtdMeia = totalAssentos;
+        qtdInteira = totalAssentos - qtdMeia;
+    }
+
+    document.getElementById("qtd-inteira").value = qtdInteira;
+    document.getElementById("qtd-meia").value = qtdMeia;
+    
+    atualizarResumo();
+}
+
+// Resumo da compra 
 function atualizarResumo() {
     const txtAssentos = document.getElementById("resumo-assentos");
     const txtTotal = document.getElementById("resumo-total");
     const btnConfirmar = document.getElementById("btn-confirmar");
+    
+    const qtdInteira = parseInt(document.getElementById("qtd-inteira").value) || 0;
+    const qtdMeia = parseInt(document.getElementById("qtd-meia").value) || 0;
 
     txtAssentos.innerText = assentosSelecionados.length > 0 ? assentosSelecionados.join(", ") : "-";
     
-    const total = assentosSelecionados.length * precoIngresso;
-    txtTotal.innerText = `R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+    // Cálculo
+    const valorTotal = (qtdInteira * precoIngresso) + (qtdMeia * (precoIngresso / 2));
+    
+    txtTotal.innerText = `R$ ${valorTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
 
+    document.getElementById("qtd-inteira").disabled = assentosSelecionados.length === 0;
+    document.getElementById("qtd-meia").disabled = assentosSelecionados.length === 0;
+    
     btnConfirmar.disabled = assentosSelecionados.length === 0;
+}
+
+// Btn + e -                                                      ////////////////////////   OK    ///
+function alterarQtd(tipo, valor) {
+    const input = document.getElementById(`qtd-${tipo}`);
+    if (!input || input.disabled) return;
+
+    let atual = parseInt(input.value) || 0;
+    let novo = atual + valor;
+
+    if (novo >= 0) {
+        input.value = novo;
+        ajustarQuantidades(tipo);
+    }
 }
 
 carregarMapaSala();

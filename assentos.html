@@ -61,15 +61,16 @@
     <main>
         <section class="fundo">
 
-            <div class="container py-5">
+            <div class="container-sala py-5">
                 <div class="text-center mb-5">
                     <h2 id="nome-filme-assento" class="fw-bold text-warning"></h2>
                     <p id="info-sessao" class="text-white"></p>
                 </div>
 
-                <div class="tela mx-auto shadow-lg text-center text-white">TELA</div>
+                <div class="tela mx-auto shadow-lg text-center text-white">TELA
+                </div>
 
-                <div id="mapa-sala" class="sala-mapa d-flex flex-column align-items-center gap-2">
+                <div id="mapa-sala" class="sala-mapa mt-5 d-flex flex-column align-items-center gap-2">
                 </div>
 
                 <div class="d-flex justify-content-center gap-4 mt-5">
@@ -86,35 +87,57 @@
 
                 <!--Resumo-->
                 <div class="secao-resumo card shadow-sm mt-4">
-                    <h6 class="text-center fw-bold mb-3 text-warning fs-4">Resumo da compra</h6>
+                    <h6 class="text-center fw-bold mb-3 text-warning fs-4">Resumo</h6>
 
                     <div class="linha-resumo row mt-4 mb-3 align-items-center">
-                        <div class="rotulo-resumo col-5 text-white">Filme</div>
+                        <div class="rotulo-resumo fw-bold col-5 text-white">Filme</div>
                         <div id="resumo-filme" class="valor-resumo col-7 text-end fw-semibold"></div>
                     </div>
 
                     <div class="linha-resumo row mb-3 align-items-center">
-                        <div class="rotulo-resumo col-5 text-white">Data e horário</div>
-                        <div id="resumo-data-hora" class="valor-resumo col-7 text-end fw-semibold"></div>
+                        <div class="rotulo-resumo fw-bold col-5 text-white">Data e horário</div>
+                        <div id="resumo-data-hora" class="valor-resumo col-7 text-end"></div>
                     </div>
 
                     <div class="linha-resumo row mb-4 align-items-center">
-                        <div class="rotulo-resumo col-5 text-white">Assentos</div>
-                        <div id="resumo-assentos" class="valor-resumo col-7 text-end fw-semibold">-</div>
+                        <div class="rotulo-resumo fw-bold col-5 text-white">Assentos</div>
+                        <div id="resumo-assentos" class="valor-resumo col-7 text-end">-</div>
                     </div>
 
                     <hr>
 
-                    <div class="linha-resumo total-resumo row pt-4 mt-4">
-                        <div class="rotulo-resumo col-5 fw-bold">Total</div>
-                        <div id="resumo-total" class="valor-resumo col-7 text-end fw-bold text-warning">
+                    <div class="linha-resumo total-resumo row pt-4 mt-2 align-items-center">
+                        <div class="rotulo-resumo col-5 fw-bold text-white">Inteira</div>
+                        <div id="resumo-seletor-inteira"
+                            class="valor-resumo col-7 d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn-controle" onclick="alterarQtd('inteira', -1)">-</button>
+                            <input type="number" id="qtd-inteira" class="input-qtd" value="0" min="0" readonly>
+                            <button type="button" class="btn-controle" onclick="alterarQtd('inteira', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <div class="linha-resumo fw-semibold total-resumo row pt-4 mt-2 mb-2 align-items-center">
+                        <div class="rotulo-resumo col-5 fw-bold text-white">Meia</div>
+                        <div id="resumo-seletor-meia"
+                            class="valor-resumo col-7 d-flex align-items-center justify-content-end">
+                            <button type="button" class="btn-controle" onclick="alterarQtd('meia', -1)">-</button>
+                            <input type="number" id="qtd-meia" class="input-qtd" value="0" min="0" readonly>
+                            <button type="button" class="btn-controle" onclick="alterarQtd('meia', 1)">+</button>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="linha-resumo fw-semibold total-resumo row pt-4 mt-4">
+                        <div class="rotulo-resumo fs-4 text-warning col-5 fw-bold">Total</div>
+                        <div id="resumo-total" class="valor-resumo fs-4 col-7 text-end fw-bold text-warning">
                             R$ 0,00
                         </div>
                     </div>
 
                     <div class="text-center mb-2 mt-5">
                         <button id="btn-confirmar" class="btn btn-info px-5 py-2 fw-bold" disabled>
-                            Adicionar ao Carrinho
+                            Avançar
                         </button>
                     </div>
                 </div>
