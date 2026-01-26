@@ -2,7 +2,7 @@
 
 ![Logo CineCult](./imagens/logo/logo_cine_cult.png)
 
-Este projeto consiste em uma plataforma de voltada para a compra de ingressos de cinema. Desenvolvida como parte de um curso de formação continuada em desenvolvimento front-end, utilizando HTML, CSS e JavaScript para simular um fluxo completo de compra de ingressos online para cinema.
+Este projeto consiste em uma plataforma de compra de ingressos de cinema. Desenvolvida como parte de um curso de formação continuada em desenvolvimento front-end, utilizando HTML, CSS e JavaScript para simular um fluxo completo de compra de ingressos online para cinema.
 
 | Aspecto | Detalhamento |
 | :--- | :--- |
