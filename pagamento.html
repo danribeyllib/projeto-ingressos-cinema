@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-*" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--CSS-->
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/pagamento.css" rel="stylesheet" />
@@ -61,17 +64,21 @@
     <!--MAIN-->
     <main>
         <section class="fundo py-5">
+            <h1 class="mb-5 fw-semibold pb-3 text-warning text-center">Pagamento</h1>
+            <hr>
+
+            <!--Cartão-->
             <div class="container py-4">
                 <h1 class="display-5 text-white fw-bold mb-5">
-                    <span class="text-info">Pagamento</span>
+                    <span class="text-info">Cartão</span>
+                    <span class="text-warning"><i class="bi bi-credit-card-2-front"></i></span>
                 </h1>
-
                 <div class="row">
                     <div class="col-lg-7 mb-4">
                         <div class="p-4 container-resumo text-white rounded shadow-sm">
                             <h3 class="fw-bold fs-4 mb-4 text-info">Dados do Cartão</h3>
 
-                            <!--Form-->
+                            <!--Form Cartão-->
                             <form id="form-pagamento" class="needs-validation" novalidate>
                                 <div class="mb-3">
                                     <label class="form-label small">Nome no Cartão</label>
@@ -105,6 +112,23 @@
                                     </div>
                                 </div>
 
+                                <div class="d-flex gap-4 mb-4 border-bottom border-secondary pb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="tipoCartao" id="credito"
+                                            value="credito" checked required>
+                                        <label class="form-check-label small" for="credito">
+                                            Crédito
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="tipoCartao" id="debito"
+                                            value="debito" required>
+                                        <label class="form-check-label small" for="debito">
+                                            Débito
+                                        </label>
+                                    </div>
+                                </div>
+
                                 <button type="submit" class="btn btn-info btn-lg w-100 fw-bold mt-2">
                                     Confirmar Pagamento
                                 </button>
@@ -113,29 +137,146 @@
                         </div>
                     </div>
 
+                    <!--Revisão-->
                     <div class="col-lg-5">
                         <div class="p-4 container-resumo text-white rounded shadow-sm">
                             <h3 class="fw-bold fs-4 mb-4 text-info">Revisão</h3>
 
                             <div id="detalhes-finalizacao">
                                 <div class="d-flex justify-content-between mb-2">
-                                    <span>Total de itens</span>
+                                    <span>Nº de Ingressos</span>
                                     <span id="checkout-qtd-itens" class="fw-semibold"></span>
                                 </div>
                                 <hr>
                                 <div class="d-flex justify-content-between mb-4">
-                                    <span class="fs-5 fw-bold text-warning">Total a Pagar</span>
+                                    <span class="fs-5 fw-bold text-warning">Total</span>
                                     <span id="checkout-total-geral" class="fs-4 fw-bold text-warning">R$ 0,00</span>
                                 </div>
                             </div>
                         </div>
-
                         <button class="btn btn-secondary mt-2" onclick="window.location.href='carrinho.html'">
                             <i class="bi bi-arrow-left"></i> Voltar ao carrinho
                         </button>
                     </div>
                 </div>
             </div>
+
+            <!--Pix-->
+            <div class="container py-4">
+                <h1 class="display-5 text-white fw-bold mb-5">
+                    <span class="text-info">Pix</span>
+                    <span class="text-warning"><i class="fa-brands fa-pix"></i></span>
+
+                </h1>
+
+                <div class="row">
+                    <div class="col-lg-7 mb-4 container-pagamento-indisponivel">
+
+                        <div class="camada-indisponivel">
+                            <div class="alerta-indisponivel bg-pix">
+                                Pix indisponível no momento
+                            </div>
+                        </div>
+
+                        <div class="p-4 container-resumo text-white rounded shadow-sm conteudo-pagamento-desativado">
+                            <h3 class="fw-bold fs-4 mb-4 text-info">Dados para Pix</h3>
+
+                            <form id="form-pagamento-pix" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label class="form-label small">Nome Completo</label>
+                                    <input type="text" id="pix-nome"
+                                        class="form-control bg-transparent text-white border-secondary"
+                                        placeholder="Digite seu nome" disabled>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label small">CPF</label>
+                                    <input type="text" id="pix-cpf"
+                                        class="form-control bg-transparent text-white border-secondary"
+                                        placeholder="000.000.000-00" disabled>
+                                </div>
+
+                                <div class="p-3 mb-3 border border-secondary rounded bg-dark-subtle">
+                                    <p class="small mb-0 text-secondary">
+                                        Um código Copia e Cola e um QR Code serão exibidos para o
+                                        pagamento via Pix.
+                                    </p>
+                                </div>
+
+                                <button type="submit" class="btn btn-info btn-lg w-100 fw-bold mt-2" disabled>
+                                    Gerar Código Pix
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Boleto-->
+            <div class="container py-4">
+                <h1 class="display-5 text-white fw-bold mb-5">
+                    <span class="text-info">Boleto Bancário</span>
+                    <span class="text-warning"><i class="bi bi-receipt-cutoff"></i></span>
+
+                </h1>
+
+                <div class="row">
+                    <div class="col-lg-7 mb-4 container-pagamento-indisponivel">
+
+                        <div class="camada-indisponivel">
+                            <div class="alerta-indisponivel bg-boleto">
+                                Boleto indisponível no momento
+                            </div>
+                        </div>
+
+                        <div class="p-4 container-resumo text-white rounded shadow-sm conteudo-pagamento-desativado">
+                            <h3 class="fw-bold fs-4 mb-4 text-info">Dados para Boleto</h3>
+
+                            <form id="form-pagamento-boleto" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label class="form-label small">Nome Completo</label>
+                                    <input type="text" id="boleto-nome"
+                                        class="form-control bg-transparent text-white border-secondary"
+                                        placeholder="Nome impresso no boleto" disabled>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label small">CPF/CNPJ</label>
+                                        <input type="text" id="boleto-documento"
+                                            class="form-control bg-transparent text-white border-secondary"
+                                            placeholder="000.000.000-00" disabled>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label small">CEP</label>
+                                        <input type="text" id="boleto-cep"
+                                            class="form-control bg-transparent text-white border-secondary"
+                                            placeholder="00000-000" disabled>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label small">Endereço</label>
+                                    <input type="text" id="boleto-endereco"
+                                        class="form-control bg-transparent text-white border-secondary"
+                                        placeholder="Rua, número e bairro" disabled>
+                                </div>
+
+                                <div class="p-3 mb-3 border border-secondary rounded bg-dark-subtle">
+                                    <p class="small mb-0 text-secondary">
+                                        A compensação pode levar até 72 horas.
+                                    </p>
+                                </div>
+
+                                <button type="submit" class="btn btn-info btn-lg w-100 fw-bold mt-2" disabled>
+                                    Gerar Boleto Bancário
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
@@ -157,10 +298,13 @@
                 <div class="col-md-4 text-center mb-3 mb-md-0">
                     <h6 class="text-info text-uppercase mb-3 fw-bold small">Nossas Redes Sociais</h6>
                     <div class="d-flex justify-content-center gap-3">
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://x.com/" target="_blank" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.tiktok.com/" target="_blank" class="social-icon"><i
+                                class="bi bi-tiktok"></i></a>
                     </div>
                 </div>
 

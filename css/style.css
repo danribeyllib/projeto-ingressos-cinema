@@ -23,6 +23,12 @@ h6 {
     font-weight: 600 !important;
 }
 
+/* hr */
+hr {
+    width: 90%;
+    justify-self: center;
+}
+
 /* Navbar */
 .navbar {
     position: sticky !important;

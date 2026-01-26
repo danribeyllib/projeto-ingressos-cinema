@@ -24,7 +24,7 @@ Este projeto consiste em uma plataforma de voltada para a compra de ingressos de
 - CSS3
 - JavaScript (ES6+)
 - JSON (Armazenamento local de dados)
-- ([Bootstrap 5](https://getbootstrap.com/))
+- [Bootstrap 5](https://getbootstrap.com/)
 - Git e Gihub para controle de versão
 
 
@@ -38,5 +38,5 @@ Este projeto consiste em uma plataforma de voltada para a compra de ingressos de
 3. Abra apágina utilizando o servidor local. 
 
 **Opção 2:**
-1. Clique no link - LINK PARA NETLIFY.
+1. Clique no link - [CineCultProject](https://cinecultproject.netlify.app/)
 
