@@ -12,9 +12,8 @@
     <!--CSS-->
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/detalhes.css" rel="stylesheet" />
-    <link href="./css/modais.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./imagens/logo/logo_cine_cult.png" sizes="32x32" />
     <title>Detalhes Sessão</title>
-
 </head>
 
 <body>
@@ -22,7 +21,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-info" href="index.html">
-                <i class="bi bi-film me-2"></i>Cine
+                <img src="./imagens/logo/logo_cine_cult.png" alt="Logo Cine Cult" width="40" height="40"
+                    class="d-inline-block align-text-top me-2">
+                <span class="fw-bold text-warning">Cine</span><span class="text-info fw-light">Cult</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Início</a>
+                        <a class="nav-link" href="index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Filmes</a>
+                        <a class="nav-link" href="ingressos.html">Meus Ingressos</a>
                     </li>
                 </ul>
 
@@ -44,8 +45,8 @@
 
                     <a href="./carrinho.html" class="text-white position-relative">
                         <i class="bi bi-cart3 fs-4 text-info"></i>
-                        <span id="cart-count"
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <span id="bagde-carrinho"
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-info">
                             0
                         </span>
                     </a>
@@ -72,8 +73,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+
                     <a class="navbar-brand fw-bold text-info fs-4" href="#">
-                        <i class="bi bi-film me-2"></i>Cine
+                        <img src="./imagens/logo/logo_cine_cult.png" alt="Logo Cine Cult" width="40" height="40"
+                            class="d-inline-block align-text-top me-2"><span
+                            class="fw-bold text-warning">Cine</span><span class="text-info fw-light">Cult</span>
+
                     </a>
                     <p class="text-white-50 small mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -91,7 +96,7 @@
                 <div class="col-md-4 text-center text-md-end">
                     <h6 class="text-info text-uppercase mb-3 fw-bold small">Contato</h6>
                     <ul class="list-unstyled small text-white-50">
-                        <li><i class="bi bi-envelope-at me-2 text-info"></i>contato@cine.com</li>
+                        <li><i class="bi bi-envelope-at me-2 text-info"></i>contato@cinecult.com</li>
                         <li><i class="bi bi-whatsapp me-2 text-info"></i>(54) 99999-9999</li>
                     </ul>
                 </div>
@@ -101,13 +106,15 @@
 
             <div class="text-center text-white-50 small">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Cine. Todos os direitos reservados.
+                <script>document.write(new Date().getFullYear())</script> <span
+                    class="fw-bold text-warning">Cine</span><span class="text-info">Cult</span>. Todos os direitos
+                reservados.
             </div>
         </div>
     </footer>
 
     <!--Modal-->
-    <div class="modal fade modalConfirmacao" id="modalSair" tabindex="-1" aria-hidden="true" style="z-index: 9999;">
+    <div class="modal fade modalConfirmacao" id="modalSair" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">

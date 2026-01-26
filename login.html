@@ -11,9 +11,8 @@
     <!--CSS-->
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/login.css" rel="stylesheet" />
-    <link href="./css/modais.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="#" sizes="32x32" />
-    <title>Login - Cinema</title>
+    <link rel="icon" type="image/png" href="./imagens/logo/logo_cine_cult.png" sizes="32x32" />
+    <title>Login - CineCult</title>
 </head>
 
 <body>
@@ -21,7 +20,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-info" href="index.html">
-                <i class="bi bi-film me-2"></i>Cine
+                <img src="./imagens/logo/logo_cine_cult.png" alt="Logo Cine Cult" width="40" height="40"
+                    class="d-inline-block align-text-top me-2">
+                <span class="fw-bold text-warning">Cine</span><span class="text-info fw-light">Cult</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -35,49 +36,54 @@
     <main>
         <section class="fundo">
             <div class="form-container">
-            <form
-                class="mt-5 mb-5 flex-fill d-flex flex-column justify-content-center align-items-center needs-validation"
-                novalidate>
-                <h3>Login</h3>
 
-                <div class="form-floating mb-2 w-100" style="max-width: 320px; margin: 0 auto;">
-                    <input type="email" id="emailUsuario" class="form-control form-email" placeholder="nome@exemplo.com"
-                        required />
-                    <label for="emailUsuario">E-mail</label>
-                    <div class="invalid-feedback"><small>Digite um e-mail válido.</small></div>
-                </div>
+                <form
+                    class="mt-5 mb-5 flex-fill d-flex flex-column justify-content-center align-items-center needs-validation"
+                    novalidate>
+                    <a class="" href="index.html">
+                        <img src="./imagens/logo/logo_cine_cult.png" alt="Logo Cine Cult" width="70" height="70"
+                            class="d-inline-block align-text-top me-2">
+                    </a>
+                    <h3 class="text-warning">Login</h3>
 
-                <div class="form-floating w-100" style="max-width: 320px;">
-                    <input id="senhaUsuario" type="password" class="form-control form-senha" placeholder="Senha"
-                        required pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}" />
-                    <label for="senhaUsuario">Senha</label>
-
-                    <div class="invalid-feedback">
-                        <small>A senha deve ter pelo menos 8 caracteres e conter<br> letras e números.</small>
+                    <div class="form-floating mb-2 w-100" style="max-width: 320px; margin: 0 auto;">
+                        <input type="email" id="emailUsuario" class="form-control form-email"
+                            placeholder="nome@exemplo.com" required />
+                        <label for="emailUsuario">E-mail</label>
+                        <div class="invalid-feedback"><small>Digite um e-mail válido.</small></div>
                     </div>
-                </div>
 
-                <div class="form-check form-switch mt-2">
-                    <input id="mostrarSenha" class="form-check-input" type="checkbox" role="switch">
-                    <label class="form-check-label" for="mostrarSenha"><i id="iconeSenha"
-                            class="bi bi-eye-slash-fill"></i></label>
-                </div>
+                    <div class="form-floating w-100" style="max-width: 320px;">
+                        <input id="senhaUsuario" type="password" class="form-control form-senha" placeholder="Senha"
+                            required pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}" />
+                        <label for="senhaUsuario">Senha</label>
 
-                <div class="form-check text-start text-white my-3">
-                    <input type="checkbox" class="form-check-input" id="flexCheckDefault" />
-                    <label class="form-check-label" for="flexCheckDefault">Lembrar-me</label>
-                </div>
+                        <div class="invalid-feedback">
+                            <small>A senha deve ter pelo menos 8 caracteres e conter<br> letras e números.</small>
+                        </div>
+                    </div>
 
-                <div class="w-100 mb-3">
-                    <button onclick="fazerLogin()" type="button" class="btn btn-primary w-100 py-2">
-                        Entrar
-                    </button>
-                </div>
+                    <div class="form-check form-switch mt-2">
+                        <input id="mostrarSenha" class="form-check-input" type="checkbox" role="switch">
+                        <label class="form-check-label" for="mostrarSenha"><i id="iconeSenha"
+                                class="bi bi-eye-slash-fill"></i></label>
+                    </div>
 
-                <p class="fw-light">
-                    <small><b>Email:</b> teste@cinema.com<br> <b>Sehna:</b> cinema1234</small>
-                </p>
-            </form>
+                    <div class="form-check text-start text-white my-3">
+                        <input type="checkbox" class="form-check-input" id="flexCheckDefault" />
+                        <label class="form-check-label" for="flexCheckDefault">Lembrar-me</label>
+                    </div>
+
+                    <div class="w-100 mb-3">
+                        <button onclick="fazerLogin()" type="button" class="btn btn-primary w-100 py-2">
+                            Entrar
+                        </button>
+                    </div>
+
+                    <p class="fw-light">
+                        <small><b>Email:</b> teste@cinema.com<br> <b>Sehna:</b> cinema1234</small>
+                    </p>
+                </form>
             </div>
         </section>
     </main>
@@ -87,8 +93,12 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+
                     <a class="navbar-brand fw-bold text-info fs-4" href="#">
-                        <i class="bi bi-film me-2"></i>Cine
+                        <img src="./imagens/logo/logo_cine_cult.png" alt="Logo Cine Cult" width="40" height="40"
+                            class="d-inline-block align-text-top me-2"><span
+                            class="fw-bold text-warning">Cine</span><span class="text-info fw-light">Cult</span>
+
                     </a>
                     <p class="text-white-50 small mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
@@ -106,7 +116,7 @@
                 <div class="col-md-4 text-center text-md-end">
                     <h6 class="text-info text-uppercase mb-3 fw-bold small">Contato</h6>
                     <ul class="list-unstyled small text-white-50">
-                        <li><i class="bi bi-envelope-at me-2 text-info"></i>contato@cine.com</li>
+                        <li><i class="bi bi-envelope-at me-2 text-info"></i>contato@cinecult.com</li>
                         <li><i class="bi bi-whatsapp me-2 text-info"></i>(54) 99999-9999</li>
                     </ul>
                 </div>
@@ -116,7 +126,9 @@
 
             <div class="text-center text-white-50 small">
                 &copy;
-                <script>document.write(new Date().getFullYear())</script> Cine. Todos os direitos reservados.
+                <script>document.write(new Date().getFullYear())</script> <span
+                    class="fw-bold text-warning">Cine</span><span class="text-info">Cult</span>. Todos os direitos
+                reservados.
             </div>
         </div>
     </footer>

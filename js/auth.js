@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const usuario = sessionStorage.getItem("usuarioLogado");
     const paginaAtual = window.location.pathname;
 
+    console.log("Usuário logado: ", usuario);
+
     if (!usuario && !paginaAtual.includes("login.html")) {
         window.location.href = "login.html"; 
     }
@@ -13,17 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
 function gerenciarNavbar() {
     // Session storage
     const dadosSessao = sessionStorage.getItem("usuarioLogado");
-    const labelBoasVindas = document.getElementById("boas-vindas-usuario");
+    const msgBoasVindas = document.getElementById("boas-vindas-usuario");
 
-    if (dadosSessao && labelBoasVindas) {
+    if (dadosSessao && msgBoasVindas) {
         try {
             const usuario = JSON.parse(dadosSessao);
             const nomeExibir = usuario.email.split('@')[0];
-            const nomeFormatado = nomeExibir.charAt(0).toUpperCase() + nomeExibir.slice(1);
-           
-            labelBoasVindas.innerText = `Bem-vindo, ${nomeFormatado}`;
+            const nomeFormatadoTeste = nomeExibir.charAt(0).toUpperCase() + nomeExibir.slice(1);
+
+            console.log("Nome Formatado: ", nomeFormatadoTeste);
+
+            msgBoasVindas.innerText = `Bem-vindo, ${nomeFormatadoTeste}`;
         } catch (e) {
-            labelBoasVindas.innerText = `Bem-vindo!`;
+            msgBoasVindas.innerText = `Bem-vindo!`;
         }
     }
 };

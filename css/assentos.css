@@ -20,10 +20,9 @@ body {
     border-radius: 10px;
     background: rgba(4, 5, 5, 0.622);
     border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.268);
+    box-shadow: inset 0 0 2px 2px rgba(5, 104, 147, 0.395) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8.2px);
-    border: 1px solid rgba(53, 0, 152, 0.551);
 }
 
 /* Tela */
@@ -134,10 +133,9 @@ body {
 .secao-resumo {
     background: rgba(30, 0, 87, 0.61);
     border-radius: 10px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 2px 2px rgba(79, 209, 219, 0.305) !important;
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
-    border: 1px solid rgba(53, 0, 152, 0.551);
     color: white;
     padding: 20px;
     width: 100%;
@@ -157,7 +155,6 @@ body {
     appearance: auto;
     -moz-appearance: number-input;
     -webkit-appearance: number-input;
-
     background-color: #33013f;
     border: 1px solid #3cd2fb;
     color: #3cd2fb;

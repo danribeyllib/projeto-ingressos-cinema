@@ -1,6 +1,6 @@
 body {
     background-color: rgba(22, 0, 43, 0.712);
-    background-image: url("../imagens/Fundo/photo-1689443111130-6e9c7dfd8f9e.jpg");
+    background-image: url("../imagens/fundo/photo-1689443111130-6e9c7dfd8f9e.jpg");
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
@@ -37,21 +37,24 @@ h6 {
     color: #07c5ff !important;
 }
 
-#cart-count {
-    font-size: 0.65rem;
+#bagde-carrinho {
+    background: rgba(14, 0, 87, 0.61);
+    border-radius: 10px;
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(3, 221, 221, 0.551);
 }
 
 /* Card Filmes */
 .filme-card {
-    /* From https://css.glass */
-    background: rgba(29, 17, 47, 0.673);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(12.2px);
-    -webkit-backdrop-filter: blur(12.2px);
-    border: 1px solid rgba(29, 17, 47, 0.59);
     border-radius: 5px;
     overflow: hidden;
-    transition: .3s;
+    background: rgba(35, 0, 79, 0.574);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: inset 0 0 2px 2px rgba(79, 209, 219, 0.305) !important;
+    transition: transform 0.3s ease;
 }
 
 .filme-card:hover {
@@ -63,6 +66,10 @@ h6 {
     height: 500px;
     width: auto;
     object-fit: cover;
+}
+
+a {
+    text-decoration: none !important;
 }
 
 /* Tags Classificação Indicativa */
@@ -147,7 +154,6 @@ h6 {
     text-shadow: 0 0 10px rgba(233, 0, 78, 0.97);
 }
 
-
 /* Botão Fechar */
 .btn-close {
     filter: invert(1);
@@ -168,5 +174,5 @@ h6 {
 .btn-secondary:hover {
     background: #07c5ff !important;
     color: #000 !important;
-    box-shadow: 0 0 15px #07c5ff;
+    box-shadow: 0 0 8px #67c7e4;
 }

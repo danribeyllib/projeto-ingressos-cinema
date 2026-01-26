@@ -4,14 +4,16 @@ Cinépolis: https://www.cinepolis.com.br/
 
 
 
-/* 4 valores: Topo | Direita | Baixo | Esquerda */
+CSS:
+
+Topo | Direita | Baixo | Esquerda 
 padding: 10px 20px 15px 5px;
 
-/* 3 valores: Topo | Esquerda/Direita | Baixo */
+Topo | Esquerda/Direita | Baixo 
 padding: 10px 20px 15px;
 
-/* 2 valores: Topo/Baixo | Esquerda/Direita */
+Topo/Baixo | Esquerda/Direita 
 padding: 10px 20px;
 
-/* 1 valor: Todos os lados iguais */
+Todos os lados iguais 
 padding: 10px;
