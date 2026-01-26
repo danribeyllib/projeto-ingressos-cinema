@@ -51,6 +51,18 @@ hr {
     border: 1px solid rgba(3, 221, 221, 0.551);
 }
 
+/* Carrossel */
+.carousel-caption {
+    background-color: #0b00247e !important;
+    backdrop-filter: blur(6.2px);
+    -webkit-backdrop-filter: blur(6.2px);
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
 /* Card Filmes */
 .filme-card {
     border-radius: 5px;

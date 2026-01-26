@@ -249,7 +249,7 @@ function badgeCarrinho() {
   const totalIngressos = carrinho.reduce((acc, item) => acc + item.assentos.length, 0);
 
   badge.innerText = totalIngressos;
-  badge.style.display = totalIngressos === 0 ? "none" : "block"; ///////////////////// ok  //
+  badge.style.display = totalIngressos === 0 ? "none" : "block"; 
 }
 
 badgeCarrinho();

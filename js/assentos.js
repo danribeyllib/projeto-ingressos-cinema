@@ -7,7 +7,7 @@ const horaSessao = urlParams.get("hora");
 const dataSessao = urlParams.get("data");
 const precoIngresso = parseFloat(urlParams.get("preco")) || 0;
 
-let assentosSelecionados = []; /////////////
+let assentosSelecionados = []; 
 
 // Mapa da sala
 async function carregarMapaSala() {

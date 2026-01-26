@@ -92,7 +92,7 @@
                 "Zootopia 2": {
                     "id": 12,
                     "Destaque": true,
-                    "Img Destaque": "https://deadline.com/wp-content/uploads/2026/01/zootopia-2-disney-home-release-date.jpg?w=681&h=383&crop=1",
+                    "Img Destaque": "https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/4750/451190fe97e20c47c6dd8e57d484db8d.jpg",
                     "Ingresso": 40.00,
                     "Duração": "108 minutos",
                     "Título Original": "Zootopia 2",
@@ -119,7 +119,7 @@
                 "O Senhor Dos Anéis - O Retorno Do Rei (25º Aniversário)": {
                     "id": 14,
                     "Destaque": true,
-                    "Img Destaque": "",
+                    "Img Destaque": "https://rollingstone.com.br/wp-content/uploads/2026/01/Trilogia-O-Senhor-dos-Aneis-voltara-aos-cinemas-em-comemoracao-aos-25-anos-de-lancamento-1536x864.jpg",
                     "Ingresso": 60.00,
                     "Duração": "201 minutos",
                     "Título Original": "The Lord of the Rings: The Return of the King",
@@ -174,7 +174,7 @@
                 "O Agente Secreto": {
                     "id": 11,
                     "Destaque": true,
-                    "Img Destaque": "",
+                    "Img Destaque": "https://universoreverso.com.br/wp-content/uploads/2025/10/o-agente-secreto-wagner-moura.jpg",
                     "Ingresso": 55.00,
                     "Duração": "158 minutos",
                     "Título Original": "O Agente Secreto",
@@ -495,7 +495,7 @@
                     "id": 33,
                     "Ingresso": 30.00,
                     "Destaque": true,
-                    "Img Destaque": "",
+                    "Img Destaque": "https://load.websg.app.br/revistakdea360.com.br/image?src=https://revistakdea360.com.br/images/noticias/33511/19110320_banner_pla.png&w=1200&h=630&output=webp",
                     "Duração": "88 minutos",
                     "Título Original": "The SpongeBob Movie: Search for SquarePants",
                     "Direção": "Derek Drymon",
@@ -551,7 +551,7 @@
                 "Song Sung Blue: Um Sonho A Dois": {
                     "id": 34,
                     "Destaque": true,
-                    "Img Destaque": "",
+                    "Img Destaque": "https://lowcountryhumanists.org/wp-content/uploads/2025/12/song-sung-blue-header-1080x630.jpg",
                     "Ingresso": 40.00,
                     "Duração": "110 minutos",
                     "Título Original": "Song Sung Blue",
@@ -671,7 +671,7 @@
                 "Terror Em Silent Hill: Regresso Para O Inferno": {
                     "id": 41,
                     "Destaque": true,
-                    "Img Destaque": "",
+                    "Img Destaque": "https://dm0fzqdup5a0q.cloudfront.net/wp-content/uploads/2025/12/02170709/noticia-completa_terror-em-silent-hill.webp",
                     "Ingresso": 50.00,
                     "Duração": "100 minutos",
                     "Título Original": "Return to Silent Hill",

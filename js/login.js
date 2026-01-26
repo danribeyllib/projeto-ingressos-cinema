@@ -84,4 +84,3 @@ document.addEventListener('keydown', function (event) {
 });
 
 
-/////////  LOGIN OK /////////////

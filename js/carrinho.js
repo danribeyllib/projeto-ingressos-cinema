@@ -93,7 +93,7 @@ function renderizarCarrinho() {
     if (btnConcluir) btnConcluir.disabled = false;
 }
 // Modais
-function modalExcluir(index) { // index
+function modalExcluir(index) { 
     indexParaExcluir = index;
     
     const modal = new bootstrap.Modal(document.getElementById('modalEcluir'));

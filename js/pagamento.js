@@ -133,7 +133,7 @@ function processarPagamento() {
 
     const carrinhoComCodigos = carrinho.map(item => ({
         ...item,
-        codigoReserva: gerarCodigoUnico()          ////////////////         ok           //////////
+        codigoReserva: gerarCodigoUnico()        
     }));
 
     const novoHistorico = [...comprasAnteriores, ...carrinhoComCodigos];
