@@ -91,6 +91,8 @@
             {
                 "Zootopia 2": {
                     "id": 12,
+                    "Destaque": true,
+                    "Img Destaque": "https://deadline.com/wp-content/uploads/2026/01/zootopia-2-disney-home-release-date.jpg?w=681&h=383&crop=1",
                     "Ingresso": 40.00,
                     "Duração": "108 minutos",
                     "Título Original": "Zootopia 2",
@@ -116,6 +118,8 @@
                 },
                 "O Senhor Dos Anéis - O Retorno Do Rei (25º Aniversário)": {
                     "id": 14,
+                    "Destaque": true,
+                    "Img Destaque": "",
                     "Ingresso": 60.00,
                     "Duração": "201 minutos",
                     "Título Original": "The Lord of the Rings: The Return of the King",
@@ -141,6 +145,7 @@
                 },
                 "A Empregada": {
                     "id": 13,
+                    "Destaque": false,
                     "Ingresso": 45.00,
                     "Duração": "140 minutos",
                     "Título Original": "Housemaid",
@@ -168,6 +173,8 @@
                 },
                 "O Agente Secreto": {
                     "id": 11,
+                    "Destaque": true,
+                    "Img Destaque": "",
                     "Ingresso": 55.00,
                     "Duração": "158 minutos",
                     "Título Original": "O Agente Secreto",
@@ -286,6 +293,7 @@
             {
                 "A Empregada": {
                     "id": 23,
+                    "Destaque": false,
                     "Ingresso": 45.00,
                     "Duração": "140 minutos",
                     "Título Original": "Housemaid",
@@ -314,6 +322,7 @@
                 },
                 "O Agente Secreto": {
                     "id": 21,
+                    "Destaque": false,
                     "Ingresso": 55.00,
                     "Duração": "158 minutos",
                     "Título Original": "O Agente Secreto",
@@ -339,6 +348,7 @@
                 },
                 "Zootopia 2": {
                     "id": 22,
+                    "Destaque": false,
                     "Ingresso": 40.00,
                     "Duração": "108 minutos",
                     "Título Original": "Zootopia 2",
@@ -364,6 +374,7 @@
                 },
                 "O Senhor Dos Anéis - O Retorno Do Rei (25º Aniversário)": {
                     "id": 24,
+                    "Destaque": false,
                     "Ingresso": 60.00,
                     "Duração": "201 minutos",
                     "Título Original": "The Lord of the Rings: The Return of the King",
@@ -483,6 +494,8 @@
                 "Bob Esponja: Em Busca Da Calça Quadrada": {
                     "id": 33,
                     "Ingresso": 30.00,
+                    "Destaque": true,
+                    "Img Destaque": "",
                     "Duração": "88 minutos",
                     "Título Original": "The SpongeBob Movie: Search for SquarePants",
                     "Direção": "Derek Drymon",
@@ -508,6 +521,7 @@
                 },
                 "Justiça Artificial": {
                     "id": 32,
+                    "Destaque": false,
                     "Ingresso": 40.00,
                     "Duração": "98 minutos",
                     "Título Original": "Justicia Artificial",
@@ -536,6 +550,8 @@
                 },
                 "Song Sung Blue: Um Sonho A Dois": {
                     "id": 34,
+                    "Destaque": true,
+                    "Img Destaque": "",
                     "Ingresso": 40.00,
                     "Duração": "110 minutos",
                     "Título Original": "Song Sung Blue",
@@ -654,6 +670,8 @@
             {
                 "Terror Em Silent Hill: Regresso Para O Inferno": {
                     "id": 41,
+                    "Destaque": true,
+                    "Img Destaque": "",
                     "Ingresso": 50.00,
                     "Duração": "100 minutos",
                     "Título Original": "Return to Silent Hill",
@@ -682,6 +700,7 @@
                 },
                 "Song Sung Blue: Um Sonho A Dois": {
                     "id": 44,
+                    "Destaque": false,
                     "Ingresso": 40.00,
                     "Duração": "110 minutos",
                     "Título Original": "Song Sung Blue",

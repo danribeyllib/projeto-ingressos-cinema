@@ -44,15 +44,15 @@ function renderizarCabecalho(nomeSala) {
     // Data BR
     const dataFormatada = formatoDataBR(dataSessao);
 
-    const elNome = document.getElementById("nome-filme-assento");
-    const elInfo = document.getElementById("info-sessao");
-    const elResumoFilme = document.getElementById("resumo-filme");
-    const elResumoData = document.getElementById("resumo-data-hora");
+    const itNome = document.getElementById("nome-filme-assento");
+    const itInfo = document.getElementById("info-sessao");
+    const itResumoFilme = document.getElementById("resumo-filme");
+    const itResumoData = document.getElementById("resumo-data-hora");
 
-    if (elNome) elNome.innerText = filmeNome;
-    if (elInfo) elInfo.innerText = `Sala ${nomeSala} | ${dataFormatada} às ${horaSessao}`;
-    if (elResumoFilme) elResumoFilme.innerText = filmeNome;
-    if (elResumoData) elResumoData.innerText = `${dataFormatada} - ${horaSessao}`;
+    if (itNome) itNome.innerText = filmeNome;
+    if (itInfo) itInfo.innerText = `Sala: ${nomeSala} • Data: ${dataFormatada} • Hora: ${horaSessao}`;
+    if (itResumoFilme) itResumoFilme.innerText = filmeNome;
+    if (itResumoData) itResumoData.innerText = `${dataFormatada} - ${horaSessao}`;
 }
 
 // Layout dos Assentos
