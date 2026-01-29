@@ -65,7 +65,7 @@ function gerarDatasSemanas() {
     const dataFutura = new Date(hoje);
     dataFutura.setDate(hoje.getDate() + i);
 
-    console.log("Datas Futuras:", dataFutura);
+    //  console.log("Datas Futuras:", dataFutura);
 
     const dataFormatada = dataFutura.toLocaleDateString('pt-BR', opcoes);
 
@@ -83,14 +83,14 @@ function gerarDatasSemanas() {
 }
 
 // Verificar horário
-function verificarSessaoPassou(dataAMD, horaString) {
+function verificarHoraSessao(dataAMD, horaString) {
   const agora = new Date();
   const [ano, mes, dia] = dataAMD.split('-').map(Number);
   const [horas, minutos] = horaString.split(':').map(Number);
 
   // fuso local
   const dataSessao = new Date(ano, mes - 1, dia, horas, minutos, 0);
-  console.log("Datas e horas:", dataSessao);
+  // console.log("Datas e horas:", dataSessao);
 
   return agora > dataSessao;
 }
@@ -177,9 +177,9 @@ function renderizarSessoes() {
               <div class="d-flex flex-wrap gap-3">
                 ${horas.map(h => {
 
-                 const sessaoEncerrada = verificarSessaoPassou(dataSelecionada, h);
+    const sessaoEncerrada = verificarHoraSessao(dataSelecionada, h);
 
-                      return `
+    return `
                         <button 
                           type="button"
                           class="btn btn-sessao shadow-sm ${sessaoEncerrada ? 'sessao-encerrada' : ''}" 
@@ -188,7 +188,7 @@ function renderizarSessoes() {
                           ${h}
                         </button>
                       `;
-                     }).join("")}
+  }).join("")}
 
               </div>
             </div>
@@ -230,15 +230,26 @@ function renderizarSelecaoData() {
 
 // Pág de escolha de Assentos
 function irParaEscolhaAssentos(filmeId, hora, salaId, preco) {
-  if (verificarSessaoPassou(dataSelecionada, hora)) {
+  if (verificarHoraSessao(dataSelecionada, hora)) {
     return;
   }
 
   const nomeFilme = params.get("filme");
-  // URL com o nome filme
-  const url = `assentos.html?id=${filmeId}&sala=${salaId}&hora=${hora}&data=${dataSelecionada}&preco=${preco}&nome=${encodeURIComponent(nomeFilme)}`;
-  window.location.href = url;
+
+  const dadosSessao = {
+    id: filmeId,
+    sala: salaId,
+    hora: hora,
+    data: dataSelecionada,
+    preco: parseFloat(preco),
+    nome: nomeFilme
+  };
+
+  sessionStorage.setItem("sessao_selecionada", JSON.stringify(dadosSessao));
+
+  window.location.href = "assentos.html";
 }
+
 
 // Badge do Carrinho
 function badgeCarrinho() {
@@ -249,7 +260,7 @@ function badgeCarrinho() {
   const totalIngressos = carrinho.reduce((acc, item) => acc + item.assentos.length, 0);
 
   badge.innerText = totalIngressos;
-  badge.style.display = totalIngressos === 0 ? "none" : "block"; 
+  badge.style.display = totalIngressos === 0 ? "none" : "block";
 }
 
 badgeCarrinho();

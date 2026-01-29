@@ -1,13 +1,17 @@
-// Montar URL
-const urlParams = new URLSearchParams(window.location.search);
-const salaId = urlParams.get("sala");
+// Session Storage
+const dadosSessaoSession = JSON.parse(sessionStorage.getItem("sessao_selecionada"));
 
-const filmeNome = urlParams.get("nome");
-const horaSessao = urlParams.get("hora");
-const dataSessao = urlParams.get("data");
-const precoIngresso = parseFloat(urlParams.get("preco")) || 0;
+if (!dadosSessaoSession) {
+    window.location.href = "index.html";
+}
 
-let assentosSelecionados = []; 
+const salaId = dadosSessaoSession.sala;
+const filmeNome = dadosSessaoSession.nome;
+const horaSessao = dadosSessaoSession.hora;
+const dataSessao = dadosSessaoSession.data;
+const precoIngresso = parseFloat(dadosSessaoSession.preco) || 0;
+
+let assentosSelecionados = [];
 
 // Mapa da sala
 async function carregarMapaSala() {
@@ -64,8 +68,7 @@ function gerarMapa(layout) {
     // Dia da semana
     const dataObjeto = new Date(dataSessao.replace(/-/g, '\/'));
 
-    console.log("Data objeto:", dataObjeto);
-
+    
     const ocupacoesExemplo = {
         //////////////////////////////////// SALA A
         "1_0_12:00": ["E2", "E3", "D5", "D6", "C7", "C8", "B2", "B3", "B4"],
@@ -122,15 +125,15 @@ function gerarMapa(layout) {
         const chaveExemplo = `${salaId}_0_${horaSessao}`;
         ocupadosEx = ocupacoesExemplo[chaveExemplo] || [];
         
-        console.log("Sala e horário: ", chaveExemplo);
-        console.log("Ocupados Ex: ", ocupadosEx);
+       // console.log("Sala e horário: ", chaveExemplo);
+       // console.log("Ocupados Ex: ", ocupadosEx);
     }
 
     // Assentos LocalStorage (compra)
     const chaveOcupacaoStorage = `ocupados_${salaId}_${dataSessao}_${horaSessao}`;
     const ocupadosCompra = JSON.parse(localStorage.getItem(chaveOcupacaoStorage)) || [];
 
-    console.log("Chave Ocupação LS: ", chaveOcupacaoStorage);
+  //  console.log("Chave Ocupação LS: ", chaveOcupacaoStorage);
     console.log("Ocupados Compra: ", ocupadosCompra);
 
     // Assentos LocalStorage (carrinho)
