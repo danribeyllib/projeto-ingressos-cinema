@@ -47,9 +47,11 @@ function renderizarCardsUnicos(filmes, containerId) {
         container.innerHTML += `
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="card filme-card h-100 shadow">
-                    <a href="detalhes.html?filme=${encodeURIComponent(filme.nome)}">
+                 
+                <a href="detalhes.html?filme=${encodeURIComponent(filme.nome)}">
                         <img src="${filme.Poster}" class="card-img-top" alt="${filme.nome}">
                     </a>
+                
                     <div class="card-body d-flex flex-column">
                         <a href="detalhes.html?filme=${encodeURIComponent(filme.nome)}">
                             <h5 class="card-title fw-semibold">${filme.nome}</h5>
@@ -59,6 +61,7 @@ function renderizarCardsUnicos(filmes, containerId) {
                         <span class="badge ${classificacao.cor} align-self-start mb-3">
                             ${classificacao.Idade}
                         </span>
+                
                         <a href="detalhes.html?filme=${encodeURIComponent(filme.nome)}" 
                            class="btn btn-secondary mt-auto">
                             Comprar ingresso

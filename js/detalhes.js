@@ -246,7 +246,6 @@ function irParaEscolhaAssentos(filmeId, hora, salaId, preco) {
   };
 
   sessionStorage.setItem("sessao_selecionada", JSON.stringify(dadosSessao));
-
   window.location.href = "assentos.html";
 }
 

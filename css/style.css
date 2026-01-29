@@ -66,10 +66,9 @@ hr {
 
 /* Card Filmes */
 .filme-card {
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
     background: rgba(35, 0, 79, 0.574);
-    border-radius: 20px;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     box-shadow: inset 0 0 2px 2px rgba(79, 209, 219, 0.305) !important;
