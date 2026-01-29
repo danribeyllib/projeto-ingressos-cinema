@@ -1,7 +1,8 @@
 body {
-    background-color: rgba(22, 0, 43, 0.712);
-    background-image: url("../imagens/fundo/photo-1689443111130-6e9c7dfd8f9e.jpg");
+    background-color: rgba(38, 0, 135, 0.548);
+    background-image: url("../imagens/fundo/6857381.jpg");
     background-blend-mode: multiply;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
     color: #ffffff;
@@ -9,8 +10,8 @@ body {
 }
 
 .fundo {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
     min-height: 100vh;
 }
 
