@@ -15,7 +15,16 @@ body {
     min-height: 100vh;
 }
 
-/* Título */
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    text-shadow: 1px 1px 3px #111111c5,
+        2px 2px 3px  #111111c5 !important;
+}
+
 h5 {
     color: #14fff3 !important;
 }

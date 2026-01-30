@@ -179,7 +179,7 @@ function renderizarSessoes() {
 
     const sessaoEncerrada = verificarHoraSessao(dataSelecionada, h);
 
-    return `
+                    return `
                         <button 
                           type="button"
                           class="btn btn-sessao shadow-sm ${sessaoEncerrada ? 'sessao-encerrada' : ''}" 
@@ -188,7 +188,7 @@ function renderizarSessoes() {
                           ${h}
                         </button>
                       `;
-  }).join("")}
+                  }).join("")}
 
               </div>
             </div>
