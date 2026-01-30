@@ -1,6 +1,6 @@
 /* Poster */
 .poster-filme {
-    max-height: 520px;
+    max-height: 600px;
     width: 100%;
     border-radius: 10px;
     object-fit: cover;
