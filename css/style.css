@@ -1,7 +1,5 @@
 body {
-    background-color: rgba(93, 85, 235, 0.57);
-    background-image: url("/imagens/fundo/6857381.jpg") !important;
-    background-blend-mode: multiply;
+    background-image: url("../imagens/fundo/6857381.jpg") !important;
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
