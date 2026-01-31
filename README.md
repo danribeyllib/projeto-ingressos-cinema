@@ -35,7 +35,7 @@ Este projeto consiste em uma plataforma de compra de ingressos de cinema. Desenv
    ```bash
    git clone https://github.com/danribeyllib/projeto-ingressos-cinema
 2. Utilize a extensão Live Server do VS Code ou servidor local de sua preferência
-3. Abra apágina utilizando o servidor local.
+3. Abra apágina utilizando o servidor local
 
 **Opção 2:**
 1. Clique no link - [CineCultProject - Nettlify](https://cinecultproject.netlify.app/)
