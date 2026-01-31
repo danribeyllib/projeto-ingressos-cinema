@@ -1,4 +1,4 @@
-// auth
+// Autenticação //
 document.addEventListener("DOMContentLoaded", function () {
     // Session storage
     const usuario = sessionStorage.getItem("usuarioLogado");
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-// Persistir entre abas
+// Persistir entre abas //
 const authChannel = new BroadcastChannel('session_sync');
 
     const sincronizarLoginAbas = () => {
@@ -45,7 +45,7 @@ const authChannel = new BroadcastChannel('session_sync');
 
 sincronizarLoginAbas();
 
-// Msg boas vindas
+// Msg boas vindas //
 function gerenciarNavbar() {
     // Session storage
     const dadosSessao = sessionStorage.getItem("usuarioLogado");
@@ -66,7 +66,7 @@ function gerenciarNavbar() {
     }
 };
 
-// Modal
+// Modal //
 function abrirModalConfirmacao() {
     let modalConf = document.getElementById("modalSair");
     let modalBootstrap = new bootstrap.Modal(modalConf);
@@ -82,7 +82,7 @@ function fecharModal() {
     }
 }
 
-// Sair
+// Sair //
 window.sair = function () {
     sessionStorage.removeItem("usuarioLogado");
 
@@ -90,7 +90,7 @@ window.sair = function () {
     window.location.href = "login.html";
 };
 
-// Logout em todas as abas
+// Logout em todas as abas //
 authChannel.addEventListener('message', (event) => {
 
     if (event.data.tipo === 'EVENTO_LOGOUT') {

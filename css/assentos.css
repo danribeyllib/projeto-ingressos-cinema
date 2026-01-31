@@ -149,7 +149,6 @@ body {
     font-size: 1.1rem;
 }
 
-
 /* Seletores */
 .valor-resumo input[type=number] {
     appearance: auto;
@@ -165,7 +164,6 @@ body {
     padding: 2px;
     display: inline-block;
 }
-
 
 /* Container seletores */
 .valor-resumo {

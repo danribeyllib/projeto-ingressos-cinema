@@ -1,3 +1,4 @@
+/* Resumo */
 .container-resumo {
     background: rgba(30, 0, 87, 0.61);
     border-radius: 10px;
@@ -15,7 +16,7 @@
     color: white;
 }
 
-/* Pagamento indiponóvel (pix, boleto */
+/* Pagamento indiponóvel (pix, boleto) */
 .container-pagamento-indisponivel {
     position: relative;
 }

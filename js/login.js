@@ -1,4 +1,4 @@
-// Botão mostrar senha
+// Botão mostrar senha //
 let inputSenha = document.getElementById("senhaUsuario");
 let mostrarSenha = document.getElementById("mostrarSenha");
 let iconeSenha = document.getElementById("iconeSenha");
@@ -17,7 +17,7 @@ if (mostrarSenha) {
     });
 }
 
-// Logar e validar
+// Logar e validar //
 function fazerLogin() {
     const form = document.querySelector(".needs-validation");
 
@@ -75,7 +75,7 @@ function retornar() {
 
 window.retornar = retornar;
 
-// Logar com tecla enter
+// Logar com tecla enter //
 document.addEventListener('keydown', function (event) {
     if (event.key === "Enter") {
         event.preventDefault();

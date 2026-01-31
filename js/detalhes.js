@@ -1,12 +1,12 @@
-// URL
+// URL //
 const params = new URLSearchParams(window.location.search);
 
-// Globais
+// Globais //
 let dataSelecionada = "";
 let salasGlobais = [];
 let precoGlobal = 0;
 
-// Dados
+// Dados //
 async function carregarDetalhesFilme() {
   const nomeFilmeUrl = params.get("filme");
 
@@ -53,7 +53,7 @@ async function carregarDetalhesFilme() {
   }
 }
 
-// Fuso local
+// Fuso local //
 function gerarDatasSemanas() {
   const datas = [];
   const hoje = new Date();
@@ -82,7 +82,7 @@ function gerarDatasSemanas() {
   return datas;
 }
 
-// Verificar horário
+// Verificar horário //
 function verificarHoraSessao(dataAMD, horaString) {
   const agora = new Date();
   const [ano, mes, dia] = dataAMD.split('-').map(Number);
@@ -164,6 +164,7 @@ function renderizarDetalhes(nome, filme) {
     `;
 }
 
+// Sessões //
 function renderizarSessoes() {
   const containerSessoes = document.getElementById("lista-sessoes");
   if (!containerSessoes) return;
@@ -197,7 +198,7 @@ function renderizarSessoes() {
     `).join("");
 }
 
-// Renderizar Datas
+// Renderizar Datas //
 function renderizarSelecaoData() {
   const containerDatas = document.getElementById("container-datas");
 
@@ -228,7 +229,7 @@ function renderizarSelecaoData() {
   });
 }
 
-// Pág de escolha de Assentos
+// Pág de escolha de Assentos //
 function irParaEscolhaAssentos(filmeId, hora, salaId, preco) {
   if (verificarHoraSessao(dataSelecionada, hora)) {
     return;
@@ -250,7 +251,7 @@ function irParaEscolhaAssentos(filmeId, hora, salaId, preco) {
 }
 
 
-// Badge do Carrinho
+// Badge do Carrinho //
 function badgeCarrinho() {
   const badge = document.getElementById("bagde-carrinho");
   if (!badge) return;

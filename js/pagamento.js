@@ -1,3 +1,4 @@
+// Inicialização //
 document.addEventListener("DOMContentLoaded", () => {
     resumoPagamento();
     configurarMascaras();
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, false);
 });
 
-// Validações
+// Validações //
 function configurarMascaras() {
     const numCartao = document.getElementById('card-numero');
     const validade = document.getElementById('card-validade');
@@ -40,6 +41,7 @@ function configurarMascaras() {
     });
 }
 
+// Resumo //
 function resumoPagamento() {
     const carrinho = JSON.parse(localStorage.getItem("carrinho_cinema")) || [];
     const resumoTotal = document.getElementById("checkout-total-geral");
@@ -70,64 +72,11 @@ function resumoPagamento() {
     }
 }
 
-// Validações
-function configurarMascaras() {
-    const numCartao = document.getElementById('card-numero');
-    const validade = document.getElementById('card-validade');
-    const cvv = document.getElementById('card-cvv');
-
-    numCartao.addEventListener('input', e => {
-        e.target.value = e.target.value.replace(/\D/g, '').replace(/(\d{4})(?=\d)/g, '$1 ');
-    });
-
-    validade.addEventListener('input', e => {
-        let val = e.target.value.replace(/\D/g, '');
-        
-        if (val.length >= 2) {
-            e.target.value = val.substring(0, 2) + '/' + val.substring(2, 4);
-        } else {
-            e.target.value = val;
-        }
-    });
-
-    cvv.addEventListener('input', e => {
-        e.target.value = e.target.value.replace(/\D/g, '');
-    });
-}
-
-function resumoPagamento() {
-    const carrinho = JSON.parse(localStorage.getItem("carrinho_cinema")) || [];
-    const resumoTotal = document.getElementById("checkout-total-geral");
-    const resumoQtd = document.getElementById("checkout-qtd-itens");
-
-    if (carrinho.length === 0) {
-        window.location.href = "index.html";
-        return;
-    }
-
-    let totalGeral = 0;
-    let totalItens = 0;
-
-    carrinho.forEach(item => {
-        const precoUnitario = item.total / (item.qtdInteira + (item.qtdMeia * 0.5));
-        totalGeral += (item.qtdInteira * precoUnitario) + (item.qtdMeia * (precoUnitario * 0.5));
-        totalItens += item.assentos.length;
-    });
-
-    if (resumoTotal) {
-        resumoTotal.innerText = `R$ ${totalGeral.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
-    }
-
-    if (resumoQtd) {
-        resumoQtd.innerText = totalItens;
-    }
-}
-
+// Simulação do Pagamento //
 function processarPagamento() {
     const carrinho = JSON.parse(localStorage.getItem("carrinho_cinema")) || [];
     
     if (carrinho.length === 0) return;
-
 
     let comprasAnteriores = JSON.parse(localStorage.getItem("itens_comprados")) || [];
 
@@ -157,7 +106,7 @@ function processarPagamento() {
     modalSucesso.show();
 };
 
-// Bagde Carrinho
+// Bagde Carrinho //
 function badgeCarrinho() {
     const badge = document.getElementById("bagde-carrinho");
     if (!badge) return;
@@ -169,7 +118,7 @@ function badgeCarrinho() {
     badge.style.display = totalIngressos === 0 ? "none" : "block";
 };
 
-// Cód Barras
+// Cód Barras //
 function gerarCodigoUnico() {
     const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
     let codigo = '';

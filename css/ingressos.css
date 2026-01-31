@@ -1,9 +1,8 @@
-/* Estilo Geral */
 body {
     margin: 0;
 }
 
-/* Container  ingressos */
+/* Container Ingressos */
 #container-ingressos {
     display: flex;
     flex-direction: column;

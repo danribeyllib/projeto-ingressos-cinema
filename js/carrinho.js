@@ -1,13 +1,13 @@
 let indexParaExcluir = null;
 
-// Data dia/mes/ano
+// Data dia/mes/ano //
 function formatarDataBR(dataString) {
     if (!dataString) return "";
     const data = new Date(dataString.replace(/-/g, '\/'));
     return data.toLocaleDateString('pt-BR');
 }
 
-// Carrinho
+// Carrinho //
 function renderizarCarrinho() {
     const listaHtml = document.getElementById("lista-carrinho");
     if (!listaHtml) return;
@@ -92,7 +92,8 @@ function renderizarCarrinho() {
     const btnConcluir = document.getElementById("btn-concluir-compra");
     if (btnConcluir) btnConcluir.disabled = false;
 }
-// Modais
+
+// Modais //
 function modalExcluir(index) { 
     indexParaExcluir = index;
     
@@ -100,7 +101,7 @@ function modalExcluir(index) {
     modal.show();
 }
 
-// Excluir item carrinho
+// Excluir item carrinho //
 function ecluirItemCarrinho() {
     if (indexParaExcluir !== null) {
 
@@ -120,7 +121,7 @@ function ecluirItemCarrinho() {
     }
 }
 
-// Modal Limpar Carrinho
+// Modal Limpar Carrinho //
 function modalLimparCarrinho() {
     const modal = new bootstrap.Modal(document.getElementById('modalLimpar'));
     modal.show();
@@ -137,7 +138,7 @@ function limparCarrinhoCompleto() {
     if (instance) instance.hide();
 }
 
-// Retornar
+// Retornar //
 function retornar() {
     const modalEcluirElement = document.getElementById('modalEcluir');
     const modalLimparElement = document.getElementById('modalLimpar');
@@ -161,7 +162,7 @@ function badgeCarrinho() {
     badge.style.display = totalIngressos === 0 ? "none" : "block";
 }
 
-// Inicialização
+// Inicialização //
 document.addEventListener("DOMContentLoaded", () => {
     badgeCarrinho();
     renderizarCarrinho();

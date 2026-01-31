@@ -1,4 +1,4 @@
-// Carregar Filmes
+// Carregar Filmes //
 async function carregarFilmes() {
     try {
         const resposta = await fetch("../data/catalogo_salas.json");
@@ -34,7 +34,7 @@ async function carregarFilmes() {
     }
 }
 
-// Cards sem Repetir 
+// Cards sem Repetir //
 function renderizarCardsUnicos(filmes, containerId) {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -73,7 +73,7 @@ function renderizarCardsUnicos(filmes, containerId) {
     });
 }
 
-// Carrossel 
+// Carrossel //
 function renderizarCarrossel(filmes) {
     const carouselInner = document.getElementById("carousel-inner");
     const carouselIndicators = document.getElementById("carousel-indicators");
@@ -120,7 +120,7 @@ function renderizarCarrossel(filmes) {
 badgeCarrinho();
 carregarFilmes();
 
-// Bagde Carrinho
+// Bagde Carrinho //
 function badgeCarrinho() {
     const badge = document.getElementById("bagde-carrinho");
     if (!badge) return;

@@ -1,3 +1,4 @@
+// Data BR //
 function formatarDataBR(dataString) {
     if (!dataString) return "";
 
@@ -5,6 +6,7 @@ function formatarDataBR(dataString) {
     return data.toLocaleDateString('pt-BR');
 };
 
+// Gerar Ingresso //
 function geraringressos() {
     const containeringressos = document.getElementById("container-ingressos"); 
     if (!containeringressos) return;
@@ -65,7 +67,7 @@ function geraringressos() {
     }).join("");
 }
 
-// Bagde Carrinho
+// Bagde Carrinho //
 function badgeCarrinho() {
     const badge = document.getElementById("bagde-carrinho");
     if (!badge) return;

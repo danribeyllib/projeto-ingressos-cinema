@@ -1,4 +1,4 @@
-// Session Storage
+// Session Storage //
 const dadosSessaoSession = JSON.parse(sessionStorage.getItem("sessao_selecionada"));
 
 if (!dadosSessaoSession) {
@@ -13,7 +13,7 @@ const precoIngresso = parseFloat(dadosSessaoSession.preco) || 0;
 
 let assentosSelecionados = [];
 
-// Mapa da sala
+// Mapa da sala //
 async function carregarMapaSala() {
     try {
         const resposta = await fetch("../data/catalogo_salas.json");
@@ -34,7 +34,7 @@ async function carregarMapaSala() {
     }
 }
 
-// Data dia/mes/ano
+// Data dia/mes/ano //
 function formatoDataBR(dataString) {
     if (!dataString) return "";
 
@@ -43,7 +43,7 @@ function formatoDataBR(dataString) {
     return data.toLocaleDateString('pt-BR');
 }
 
-// Dados da sessão (topo)
+// Dados da sessão (topo) //
 function renderizarCabecalho(nomeSala) {
     // Data BR
     const dataFormatada = formatoDataBR(dataSessao);
@@ -59,7 +59,7 @@ function renderizarCabecalho(nomeSala) {
     if (itResumoData) itResumoData.innerText = `${dataFormatada} - ${horaSessao}`;
 }
 
-// Layout dos Assentos
+// Layout dos Assentos //
 function gerarMapa(layout) {
     const container = document.getElementById("mapa-sala");
     if (!container) return;
@@ -68,7 +68,6 @@ function gerarMapa(layout) {
     // Dia da semana
     const dataObjeto = new Date(dataSessao.replace(/-/g, '\/'));
 
-    
     const ocupacoesExemplo = {
         //////////////////////////////////// SALA A
         "1_0_12:00": ["E2", "E3", "D5", "D6", "C7", "C8", "B2", "B3", "B4"],
@@ -160,7 +159,7 @@ function gerarMapa(layout) {
             const assento = document.createElement("div");
 
             if (num === "") {
-                assento.className = "assento-vazio mx-1";  // string vazia layout
+                assento.className = "assento-vazio mx-1"; 
             } else {
                 const idAssento = `${fileiraNome.replace("Fileira ", "")}${num}`;
 
@@ -185,7 +184,7 @@ function gerarMapa(layout) {
     });
 }
 
-// Seleção dos Assentos
+// Seleção dos Assentos //
 function selecionarAssento(elemento, id) {
     if (assentosSelecionados.includes(id)) {
       
@@ -243,7 +242,7 @@ function ajustarQtdMeiaInt(tipoAlterado) {
     atualizarResumo();
 }
 
-// Resumo da compra 
+// Resumo da compra //
 function atualizarResumo() {
     const textoAssentos = document.getElementById("resumo-assentos");
     const textoTotal = document.getElementById("resumo-total");
@@ -268,7 +267,7 @@ function atualizarResumo() {
     if (btnConfirmar) btnConfirmar.disabled = assentosSelecionados.length === 0;
 }
 
-// Btn + e - 
+// Btn + e - //
 function alterarQtd(tipo, valor) {
     const input = document.getElementById(`qtd-${tipo}`);
    
@@ -283,7 +282,7 @@ function alterarQtd(tipo, valor) {
     }
 }
 
-// Carrinho
+// Carrinho //
 function salvarNoCarrinho() {
     if (assentosSelecionados.length === 0) return;
 
@@ -310,7 +309,7 @@ function salvarNoCarrinho() {
     atualizarResumo();
 }
 
-//modal bootstrap
+// Modal Bootstrap //
 function retornar() {
     const modalElement = document.getElementById('modalSucessoCarrinho');
     const modalInstance = bootstrap.Modal.getInstance(modalElement);
@@ -319,9 +318,10 @@ function retornar() {
 
     carregarMapaSala();
     renderizarResumo();
+    badgeCarrinho();
 }
 
-// Renderizar
+// Renderizar Resumo //
 function renderizarResumo() {
     const listaHtml = document.getElementById("lista-carrinho");
  
@@ -373,7 +373,7 @@ function limparCarrinhoCompleto() {
     location.reload();
 }
 
-// Badge Carrinho
+// Badge Carrinho //
 function badgeCarrinho() {
     const badge = document.getElementById("bagde-carrinho");
     if (!badge) return;
@@ -387,7 +387,7 @@ function badgeCarrinho() {
 
 badgeCarrinho();
 
-// Inicialização
+// Inicialização //
 document.addEventListener("DOMContentLoaded", () => {
     carregarMapaSala();
     renderizarResumo();
