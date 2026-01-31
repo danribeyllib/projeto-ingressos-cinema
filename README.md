@@ -38,5 +38,6 @@ Este projeto consiste em uma plataforma de compra de ingressos de cinema. Desenv
 3. Abra apágina utilizando o servidor local. 
 
 **Opção 2:**
-1. Clique no link - [CineCultProject](https://cinecultproject.netlify.app/)
+1. Clique no link - [CineCultProject - Nettlify](https://cinecultproject.netlify.app/)
+2. Clique no link - [CineCult - Vercel](https://projeto-ingressos-cinema.vercel.app/)
 
